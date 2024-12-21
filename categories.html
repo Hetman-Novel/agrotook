@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20241221174553" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20241221174553">
+   <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20241221174553">
+   <!--<link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20241221174553">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20241221174553">-->
+   <title>Categories - Аgro Took</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		
+		<header class="header bg-color">
+			<div class="n_container">
+				<div class="header__left">
+					<a href="/agrotook/">
+						<img src="images/svg/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header__right">
+					<div class="header__categories-select">
+						<p class="header__categories-select-current">Categories</p>
+						<img class="categories-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="blockCalegoriesLinks">
+							<ul>
+								<li><a href="#">Plant growing</a></li>
+								<li><a href="#">Animal husbandry</a></li>
+								<li><a href="#">Fertilizers</a></li>
+								<li><a href="#">Equipment</a></li>
+								<li><a href="#">Other</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Crops</a></li>
+								<li><a href="#">Grains</a></li>
+								<li><a href="#">Coffe & Tea</a></li>
+								<li><a href="#">Seeds & seedlings</a></li>
+								<li><a href="#">Vegetables</a></li>
+								<li><a href="#">Fruits</a></li>
+								<li><a href="#">Berries</a></li>
+								<li><a href="#">Greens</a></li>
+								<li><a href="#">Mushrooms</a></li>
+								<li><a href="#">Nuts & Fruits</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Barley</a></li>
+								<li><a href="#">Corn</a></li>
+								<li><a href="#">Rye</a></li>
+								<li><a href="#">Wheat</a></li>
+								<li><a href="#">Oats</a></li>
+								<li><a href="#">Millet</a></li>
+								<li><a href="#">Rape</a></li>
+								<li><a href="#">Beans</a></li>
+								<li><a href="#">Soybeans</a></li>
+								<li><a href="#">Buckwheat</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="/agrotook/favorite.html" class="header__icon-favorites">
+						<img src="images/favorite-active.png" alt="">
+					</a>
+					<a href="#" class="header__icon-message">
+						<img src="images/svg/message.svg" alt="">
+					</a>
+					<div class="header__lang-select">
+						<div class="header__lang-select-current-icon">
+							<img src="images/svg/language-icons/flag-eng.svg" alt="eng">
+						</div>
+						<img class="lang-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="block-langs">
+							<p>Select a language:</p>
+							<ul>
+								<li><!-- class: current-lang -->
+									<a href="#"><img src="images/svg/language-icons/flag-gb.svg" alt="GB"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-al.svg" alt="AL"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-am.svg" alt="AM"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-ee.svg" alt="EE"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-by.svg" alt="BY"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-bg.svg" alt="BG"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-ba.svg" alt="BA"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-is.svg" alt="IS"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-hu.svg" alt="HU"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-gr.svg" alt="GR"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-dk.svg" alt="DK"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-de.svg" alt="DE"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-it.svg" alt="IT"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-nl.svg" alt="NL"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-no.svg" alt="NO"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-pl.svg" alt="PL"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-pt.svg" alt="PT"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-md.svg" alt="MD"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-ru.svg" alt="RU"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-sk.svg" alt="SK"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-cz.svg" alt="CZ"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-rs.svg" alt="RS"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-ua.svg" alt="UA"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-si.svg" alt="SI"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-fr.svg" alt="FR"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-fi.svg" alt="FI"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-se.svg" alt="SE"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-hr.svg" alt="HR"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/svg/language-icons/flag-tr.svg" alt="TR"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__blockProfile">
+						<div class="wrap-photo open-list-user">
+							<img src="images/user.jpg" alt="">
+						</div>
+						<a class="open-list-user" href="#">Your profile</a>
+						<div class="header__blockProfileLinks">
+							<ul>
+								<li><a href="#">My orders</a></li>
+								<li class="create-add"><a href="#">Create Add</a></li>
+								<li><a href="#">Notifications</a></li>
+								<li><a href="#">Personal messages</a></li>
+								<li><a href="#">Profile settings</a></li>
+								<li><a href="#">Place an advertisement</a></li>
+								<li><a href="/">Log out</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="header__button">Create Add</a>
+				</div>
+			</div>
+		</header>
+		<main class="main categories">
+         <div class="n_container">
+				<div class="page__head">
+					<h1>Categories</h1>
+				</div>
+            <div class="advertisement__block first-block-text text-center">
+               <h3>Choose a category and get the best results!</h3>
+               <form action="#" class="categories__search-form">
+                  <div class="form-culumn cat looking"> <!-- show-result -->
+                     <input type="text" placeholder="What are you looking for?">
+                     <button type="button" class="form-culumn-btn-close"> <!-- show -->
+                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <mask id="mask0_1250_63068" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="35" height="35">
+                              <rect width="35" height="35" fill="#D9D9D9"/>
+                           </mask>
+                           <g mask="url(#mask0_1250_63068)">
+                              <path d="M6.97962 30L5 28.0204L15.5204 17.5L5 6.97962L6.97962 5L17.5 15.5204L28.0204 5L30 6.97962L19.4796 17.5L30 28.0204L28.0204 30L17.5 19.4796L6.97962 30Z" fill="#828080"/>
+                           </g>
+                        </svg>
+                     </button>
+                     <div class="block-with-result">
+                        <div class="block-with-result__block">
+                           <div class="wrap-region-list">
+                              <ul>
+                                 <li class="hidden-no-result">No result</li>
+                                 <li class="hidden-searching">Searching...</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-culumn regions all-country"> <!-- show-result -->
+                     <input type="text" placeholder="All country">
+                     <button type="button" class="form-culumn-btn-close"> <!-- show -->
+                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <mask id="mask0_1250_63068" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="35" height="35">
+                              <rect width="35" height="35" fill="#D9D9D9"/>
+                           </mask>
+                           <g mask="url(#mask0_1250_63068)">
+                              <path d="M6.97962 30L5 28.0204L15.5204 17.5L5 6.97962L6.97962 5L17.5 15.5204L28.0204 5L30 6.97962L19.4796 17.5L30 28.0204L28.0204 30L17.5 19.4796L6.97962 30Z" fill="#828080"/>
+                           </g>
+                        </svg>
+                     </button>
+                     <div class="block-with-result">
+                        <div class="block-with-result__block there-is-a-scroll"><!-- there-is-a-scroll -->
+                           <div class="wrap-all-country show">
+                              <ul>
+                                 <li class="border region"><a href="#">All country</a></li>
+                              </ul>
+                              <div class="bg-color">
+                                 <img src="images/svg/search-all-country.svg" alt="" class="icon">
+                                 <div class="content">
+                                    <h5>To use your current location, open Agro Took access in your device settings.</h5>
+                                    <p>You can allow your location to be determined in your browser settings.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="wrap-region-list">
+                              <h6>Select an area</h6>
+                              <ul>
+                                 <!--<li class="region"><a href="#">Odesa region</a></li>
+                                 <li class="region"><a href="#">Dnipropetrovska oblast</a></li>
+                                 <li class="region"><a href="#">Chernihiv region</a></li>
+                                 <li class="region"><a href="#">Zhytomyr region</a></li>
+                                 <li class="region"><a href="#">Zaporizhzhya region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>-->
+                                 <li class="hidden-no-result">No result</li>
+                                 <li class="hidden-searching">Searching...</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <button type="submit" class="categories__search-submit">Search</button>
+               </form>
+            </div>
+            <div class="categories__items">
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-crops.png" alt="Crops">
+                  </a>
+                  <h4 class="categories__name">Crops</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-processing.png" alt="Processing">
+                  </a>
+                  <h4 class="categories__name">Processing</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-grains.png" alt="Grains">
+                  </a>
+                  <h4 class="categories__name">Grains</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-vegetables.png" alt="Vegetables">
+                  </a>
+                  <h4 class="categories__name">Vegetables</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-greens.png" alt="Greens">
+                  </a>
+                  <h4 class="categories__name">Greens</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-seeds-seedlings.png" alt="Seeds & seedlings">
+                  </a>
+                  <h4 class="categories__name">Seeds & seedlings</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-fruits.png" alt="Fruits">
+                  </a>
+                  <h4 class="categories__name">Fruits</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-berries.png" alt="Berries">
+                  </a>
+                  <h4 class="categories__name">Berries</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-nuts-fruits.png" alt="Nuts & Fruits">
+                  </a>
+                  <h4 class="categories__name">Nuts & Fruits</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-mushrooms.png" alt="Mushrooms">
+                  </a>
+                  <h4 class="categories__name">Mushrooms</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-livestock.png" alt="Livestock">
+                  </a>
+                  <h4 class="categories__name">Livestock</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-bees-honey.png" alt="Bees & honey">
+                  </a>
+                  <h4 class="categories__name">Bees & honey</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-vermi-culture.png" alt="Vermi culture">
+                  </a>
+                  <h4 class="categories__name">Vermi culture</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-meat.png" alt="Meat">
+                  </a>
+                  <h4 class="categories__name">Meat</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-fish-seafood.png" alt="Fish & seafood">
+                  </a>
+                  <h4 class="categories__name">Fish & seafood</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-dairy.png" alt="Dairy">
+                  </a>
+                  <h4 class="categories__name">Dairy</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-agronomy.png" alt="Agronomy">
+                  </a>
+                  <h4 class="categories__name">Agronomy</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-feed.png" alt="Feed">
+                  </a>
+                  <h4 class="categories__name">Feed</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-fertilizers-pesticides.png" alt="Fertilizers & pesticides">
+                  </a>
+                  <h4 class="categories__name">Fertilizers & pesticides</h4>
+               </div>
+               <div href="#" class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-veterinary-drugs.png" alt="Veterinary drugs">
+                  </a>
+                  <h4 class="categories__name">Veterinary drugs</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-coffee-tea.png" alt="Coffee & Tea">
+                  </a>
+                  <h4 class="categories__name">Coffee & Tea</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-agricultural-machinery.png" alt="Agricultural machinery">
+                  </a>
+                  <h4 class="categories__name">Agricultural machinery</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-miscellaneous-good.png" alt="Miscellaneous good">
+                  </a>
+                  <h4 class="categories__name">Miscellaneous good</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-nuts-fruits-2.png" alt="Nuts & Fruits">
+                  </a>
+                  <h4 class="categories__name">Nuts & Fruits</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-services.png" alt="Services">
+                  </a>
+                  <h4 class="categories__name">Services</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-flowers.png" alt="Flowers">
+                  </a>
+                  <h4 class="categories__name">Flowers</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-flowers-2.png" alt="Flowers">
+                  </a>
+                  <h4 class="categories__name">Flowers</h4>
+               </div>
+            </div>
+         </div>
+      </main>
+		<footer class="footer">
+    <div class="n_container">
+        <div class="footer__columns">
+            <div class="footer__column footer-first-column">
+                <div class="footer__blockLogo">
+                    <img src="images/footer-logo.png" alt="Agro Took">
+                    <h2>Agro Took</h2>
+                </div>
+                <div class="footer__appButtons">
+                    <a href="#">
+                        <img src="images/svg/footer-app-google.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/svg/footer-app-store.svg" alt="">
+                    </a>
+                </div>
+                <p class="footer-copyright">2024 Agro Took.<br> All right reserved.</p>
+            </div>
+            <div data-da="footer-first-column, 1, 720" class="footer__column">
+                <div class="footer__columnBlock">
+                    <h3>About us</h3>
+                    <ul>
+                        <li><a href="#">About AGRO TOOK</a></li>
+                        <li><a href="#">Mobile application</a></li>
+                        <li><a href="#">Advertising</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Favorites</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock last">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Public offer</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	</div>
+	
+   <script src="js/script.min.js?_v=20241221174553"></script>
+   
+   <script src="files/js/search-for-categories.js?_v=20241221174553"></script>
+	
+</body>
+</html>
