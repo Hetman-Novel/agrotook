@@ -14,58 +14,12 @@ $(document).ready(function () { // Make sure the DOM is fully loaded before init
       });
    });
 
-   $('#where-are-you-moving-from').select2({
-      placeholder: "10001, New York, NY",
-      theme: 'where-are-you-moving-from'
+   $('#sidebar-filters-categories').select2({
+      placeholder: "Category",
+      theme: 'sidebar-filters'
    });
-   $('#where-are-you-moving-to').select2({
-      placeholder: "10001, New York, NY",
-      theme: 'where-are-you-moving-from'
-   });
-   $('#get-matched-where-are-you-moving-from').select2({
-      placeholder: "10001, New York, NY",
-      theme: 'where-are-you-moving-from'
-   });
-   $('#get-matched-where-are-you-moving-to').select2({
-      placeholder: "10001, New York, NY",
-      theme: 'where-are-you-moving-from'
-   });
-   $('#how-much-needs-to-be-moved').select2({
-      placeholder: "Move Size",
-      theme: 'where-are-you-moving-from'
-   });
-   $('#where-are-you-moving-from2').select2({
-      placeholder: "10001, New York, NY",
-      theme: 'where-are-you-moving-from'
-   });
-   $('#where-are-you-moving-to2').select2({
-      placeholder: "10001, New York, NY",
-      theme: 'where-are-you-moving-from'
-   });
-   $('#get-matched-where-are-you-moving-from2').select2({
-      placeholder: "10001, New York, NY",
-      theme: 'where-are-you-moving-from'
-   });
-   $('#get-matched-where-are-you-moving-to2').select2({
-      placeholder: "10001, New York, NY",
-      theme: 'where-are-you-moving-from'
-   });
-   $('#how-much-needs-to-be-moved2').select2({
-      placeholder: "Move Size",
-      theme: 'where-are-you-moving-from'
-   });
-
-   // Calculator
-   $('#calculator-where-are-you-moving-from').select2({
-      placeholder: "10001, New York, NY",
-      theme: 'where-are-you-moving-from'
-   });
-   $('#calculator-where-are-you-moving-to').select2({
-      placeholder: "10001, New York, NY",
-      theme: 'where-are-you-moving-from'
-   });
-   $('#calculator-how-much-needs-to-be-moved').select2({
-      placeholder: "Move Size",
-      theme: 'where-are-you-moving-from'
+   $('#sidebar-filters-address').select2({
+      placeholder: "Address",
+      theme: 'sidebar-filters'
    });
 });
