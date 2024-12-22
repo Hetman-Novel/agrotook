@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20241222211235" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20241222211235">
+   <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20241222211235">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20241222211235">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20241222211235">
+   <title>Search - Аgro Took</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		
+		<header class="header bg-color">
+			<div class="n_container">
+				<div class="header__left">
+					<a href="/agrotook/">
+						<img src="images/svg/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header__right">
+					<div class="header__categories-select">
+						<p class="header__categories-select-current">Categories</p>
+						<img class="categories-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="blockCalegoriesLinks">
+							<ul>
+								<li><a href="#">Plant growing</a></li>
+								<li><a href="#">Animal husbandry</a></li>
+								<li><a href="#">Fertilizers</a></li>
+								<li><a href="#">Equipment</a></li>
+								<li><a href="#">Other</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Crops</a></li>
+								<li><a href="#">Grains</a></li>
+								<li><a href="#">Coffe & Tea</a></li>
+								<li><a href="#">Seeds & seedlings</a></li>
+								<li><a href="#">Vegetables</a></li>
+								<li><a href="#">Fruits</a></li>
+								<li><a href="#">Berries</a></li>
+								<li><a href="#">Greens</a></li>
+								<li><a href="#">Mushrooms</a></li>
+								<li><a href="#">Nuts & Fruits</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Barley</a></li>
+								<li><a href="#">Corn</a></li>
+								<li><a href="#">Rye</a></li>
+								<li><a href="#">Wheat</a></li>
+								<li><a href="#">Oats</a></li>
+								<li><a href="#">Millet</a></li>
+								<li><a href="#">Rape</a></li>
+								<li><a href="#">Beans</a></li>
+								<li><a href="#">Soybeans</a></li>
+								<li><a href="#">Buckwheat</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="/agrotook/favorite.html" class="header__icon-favorites">
+						<img src="images/favorite-active.png" alt="">
+					</a>
+					<a href="#" class="header__icon-message">
+						<img src="images/svg/message.svg" alt="">
+					</a>
+					<div class="header__lang-select">
+						<div class="header__lang-select-current-icon">
+							<img src="images/svg/language-icons/flag-eng.svg" alt="eng">
+						</div>
+						<img class="lang-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="block-langs">
+                     <div class="header__lang-content">
+                        <p>Select a language:</p>
+                        <ul>
+                           <li><!-- class: current-lang -->
+                              <a href="#"><img src="images/svg/language-icons/flag-gb.svg" alt="GB"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-al.svg" alt="AL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-am.svg" alt="AM"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ee.svg" alt="EE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-by.svg" alt="BY"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-bg.svg" alt="BG"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ba.svg" alt="BA"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-is.svg" alt="IS"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-hu.svg" alt="HU"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-gr.svg" alt="GR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-dk.svg" alt="DK"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-de.svg" alt="DE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-it.svg" alt="IT"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-nl.svg" alt="NL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-no.svg" alt="NO"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-pl.svg" alt="PL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-pt.svg" alt="PT"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-md.svg" alt="MD"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ru.svg" alt="RU"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-sk.svg" alt="SK"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-cz.svg" alt="CZ"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-rs.svg" alt="RS"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ua.svg" alt="UA"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-si.svg" alt="SI"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-fr.svg" alt="FR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-fi.svg" alt="FI"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-se.svg" alt="SE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-hr.svg" alt="HR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-tr.svg" alt="TR"></a>
+                           </li>
+                        </ul>
+                     </div>
+						</div>
+					</div>
+					<div class="header__blockProfile">
+						<div class="wrap-photo open-list-user">
+							<img src="images/user.jpg" alt="">
+						</div>
+						<a class="open-list-user" href="#">Your profile</a>
+						<div class="header__blockProfileLinks">
+							<ul>
+								<li><a href="#">My orders</a></li>
+								<li class="create-add"><a href="#">Create Add</a></li>
+								<li><a href="#">Notifications</a></li>
+								<li><a href="#">Personal messages</a></li>
+								<li><a href="#">Profile settings</a></li>
+								<li><a href="#">Place an advertisement</a></li>
+								<li><a href="/">Log out</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="header__button">Create Add</a>
+				</div>
+			</div>
+		</header>
+		<main class="main search">
+         <div class="n_container">
+				<div class="page__head there-is-a-button">
+					<h1>Search</h1>
+               <button id="show-sidebar" type="button" class="favorite__btn-show-filter">
+                  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="m487.976 0h-463.948c-21.318 0-32.075 25.866-16.97 40.971l184.942 184.97v206.059c0 7.831 3.821 15.17 10.237 19.662l80 55.98c15.783 11.048 37.763-.149 37.763-19.662v-262.039l184.947-184.97c15.074-15.075 4.391-40.971-16.971-40.971z"/>
+                  </svg>
+               </button>
+				</div>
+
+				<div class="favorite__items">
+					<div class="favorite__item">
+                  <aside id="sidebar-sort-by" class="sidebar-filters">
+                     <h2 class="sidebar-filters__title">Search</h2>
+                     <form action="#">
+                        <div class="block-sort-by">
+                           <div data-spollers class="block">
+                              <div class="block__item">
+                                 <button tabindex="-1" type="button" data-spoller class="block__title first-level-title">Filters</button>
+                                 <div class="block__text">
+                                    <div class="block__text-content">
+                                       <div class="wrap-select-form">
+                                          <input type="hidden" name="sidebar-filters-select-categories">
+                                          <select id="sidebar-filters-categories">
+                                             <option selected disabled>Category</option>
+                                             <option value="Crops">Crops</option>
+                                             <option value="Processing">Processing</option>
+                                             <option value="Grains">Grains</option>
+                                             <option value="Vegetables">Vegetables</option>
+                                             <option value="Greens">Greens</option>
+                                             <option value="Seeds & seedlings">Seeds & seedlings</option>
+                                             <option value="Fruits">Fruits</option>
+                                             <option value="Berries">Berries</option>
+                                             <option value="Nuts & Fruits">Nuts & Fruits</option>
+                                             <option value="Mushrooms">Mushrooms</option>
+                                             <option value="Livestock">Livestock</option>
+                                             <option value="Bees & honey">Bees & honey</option>
+                                             <option value="Vermi culture">Vermi culture</option>
+                                             <option value="Meat">Meat</option>
+                                             <option value="Fish & seafood">Fish & seafood</option>
+                                             <option value="Dairy">Dairy</option>
+                                             <option value="Agronomy">Agronomy</option>
+                                             <option value="Feed">Feed</option>
+                                             <option value="Fertilizers & pesticides">Fertilizers & pesticides</option>
+                                             <option value="Veterinary drugs">Veterinary drugs</option>
+                                             <option value="Coffee & Tea">Coffee & Tea</option>
+                                             <option value="Agricultural machinery">Agricultural machinery</option>
+                                             <option value="Miscellaneous good">Miscellaneous good</option>
+                                             <option value="Services">Services</option>
+                                             <option value="Flowers">Flowers</option>
+                                          </select>
+                                       </div>
+                                       <div class="wrap-select-form">
+                                          <input type="hidden" name="sidebar-filters-select-address">
+                                          <select id="sidebar-filters-address">
+                                             <option selected disabled>Adress</option>
+                                             <option value="Address 1">Address 1</option>
+                                             <option value="Address 2">Address 2</option>
+                                             <option value="Address 3">Address 3</option>
+                                             <option value="Address 4">Address 4</option>
+                                             <option value="Address 5">Address 5</option>
+                                          </select>
+                                       </div>
+                                       <div class="sidebar-filters-block">
+                                          <label>Price</label>
+                                          <div class="sidebar-filters-wrap-radio-btns auto">
+                                             <div class="sidebar-filters-btn">
+                                                <input type="radio" name="negotiable-price" value="$">
+                                                <span class="sidebar-filters-btn-checked">Negotiable price</span>
+                                             </div>
+                                             <div class="sidebar-filters-btn">
+                                                <input type="radio" name="negotiable-price" value="Price">
+                                                <span class="sidebar-filters-btn-checked">Price</span>
+                                             </div>
+                                          </div>
+                                          <input type="number" placeholder="0">
+                                          <div class="sidebar-filters-wrap-radio-btns">
+                                             <div class="sidebar-filters-btn">
+                                                <input type="radio" name="currency" value="$">
+                                                <span class="sidebar-filters-btn-checked">$</span>
+                                             </div>
+                                             <div class="sidebar-filters-btn">
+                                                <input type="radio" name="currency" value="€">
+                                                <span class="sidebar-filters-btn-checked">€</span>
+                                             </div>
+                                             <div class="sidebar-filters-btn">
+                                                <input type="radio" name="currency" value="₴">
+                                                <span class="sidebar-filters-btn-checked">₴</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="sidebar-filters-block">
+                                          <label>Unit</label>
+                                          <div class="sidebar-filters-wrap-radio-btns">
+                                             <div class="sidebar-filters-btn">
+                                                <input type="radio" name="unit" value="kg">
+                                                <span class="sidebar-filters-btn-checked">kg</span>
+                                             </div>
+                                             <div class="sidebar-filters-btn">
+                                                <input type="radio" name="unit" value="t">
+                                                <span class="sidebar-filters-btn-checked">t</span>
+                                             </div>
+                                             <div class="sidebar-filters-btn">
+                                                <input type="radio" name="unit" value="l">
+                                                <span class="sidebar-filters-btn-checked">l</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <button type="button" class="block-sort-by__apply">Show</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="block-sort-by">
+                           <div data-spollers class="block">
+                              <div class="block__item">
+                                 <button tabindex="-1" type="button" data-spoller class="block__title first-level-title">Sort by</button>
+                                 <div class="block__text">
+                                    <div class="block__text-content">
+                                       <div data-spollers class="block"><!-- data-one-spoller -->
+                                          <div class="block__item">
+                                             <button tabindex="-1" type="button" data-spoller class="block__title">Price</button>
+                                             <div class="block__text">
+                                                <div class="block__text-content">
+                                                   <div class="sidebar-filters-btn no-border">
+                                                      <input type="radio" name="price" value="Low to High">
+                                                      <span class="sidebar-filters-btn-checked">Low to High</span>
+                                                   </div>
+                                                   <div class="sidebar-filters-btn no-border">
+                                                      <input type="radio" name="price" value="High to Low">
+                                                      <span class="sidebar-filters-btn-checked">High to Low</span>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="block__item">
+                                             <button tabindex="-1" type="button" data-spoller class="block__title">New product</button>
+                                             <div class="block__text">
+                                                <div class="block__text-content">
+                                                   <div class="sidebar-filters-btn no-border">
+                                                      <input type="radio" name="new-product" value="Old to New">
+                                                      <span class="sidebar-filters-btn-checked">Old to New</span>
+                                                   </div>
+                                                   <div class="sidebar-filters-btn no-border">
+                                                      <input type="radio" name="new-product" value="New to Old">
+                                                      <span class="sidebar-filters-btn-checked">New to Old</span>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="block__item">
+                                             <button tabindex="-1" type="button" data-spoller class="block__title">Alphabetically</button>
+                                             <div class="block__text">
+                                                <div class="block__text-content">
+                                                   <div class="sidebar-filters-btn no-border">
+                                                      <input type="radio" name="alphabetically" value="From A to Z">
+                                                      <span class="sidebar-filters-btn-checked">From A to Z</span>
+                                                   </div>
+                                                   <div class="sidebar-filters-btn no-border">
+                                                      <input type="radio" name="alphabetically" value="From Z to A">
+                                                      <span class="sidebar-filters-btn-checked">From Z to A</span>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="block__item">
+                                             <button tabindex="-1" type="button" data-spoller class="block__title">Unit of measure</button>
+                                             <div class="block__text">
+                                                <div class="block__text-content">
+                                                   <p>Show first</p>
+                                                   <div class="sidebar-filters-btn no-border">
+                                                      <input type="radio" name="show-first" value="Kg">
+                                                      <span class="sidebar-filters-btn-checked">Kg</span>
+                                                   </div>
+                                                   <div class="sidebar-filters-btn no-border">
+                                                      <input type="radio" name="show-first" value="Tone">
+                                                      <span class="sidebar-filters-btn-checked">Tone</span>
+                                                   </div>
+                                                   <div class="sidebar-filters-btn no-border">
+                                                      <input type="radio" name="show-first" value="Unit">
+                                                      <span class="sidebar-filters-btn-checked">Unit</span>
+                                                   </div>
+                                                   <div class="sidebar-filters-btn no-border">
+                                                      <input type="radio" name="show-first" value="Liter">
+                                                      <span class="sidebar-filters-btn-checked">Liter</span>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <button type="button" class="block-sort-by__apply">Apply</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </aside>
+               </div>
+					<div class="favorite__item">
+                  <div class="fs__wrap-form search-page">
+							<form action="#">
+								<input type="text" placeholder="What are you looking for?">
+								<button type="submit">Search</button>
+							</form>
+							<div class="wrap-popular">
+								<p>Popular<br> requests:</p>
+								<ul>
+									<li>wheat</li>
+									<li>fertilizers</li>
+									<li>tomatoes</li>
+									<li>seeds</li>
+									<li>watermelon</li>
+									<li>Lime</li>
+									<li>Echinocactus</li>
+								</ul>
+							</div>
+						</div>
+                  <div class="top-products__items no-buttons">
+							<div class="top-products__item">
+								<div class="top-products__item-wrap-image">
+									<a href="#">
+										<img src="images/top-products-image-1.jpg" alt="">
+									</a>
+									<button type="button" class="top-products__favorites-btn"><!-- to-favorites -->
+										<svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+										</svg>
+									</button>
+								</div>
+								<table class="top-products__item-content">
+									<thead>
+										<tr>
+											<th>Madrid</th>
+											<th>Yesterday 07:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Fresh and flavorful tomatoes</td>
+											<td><sub>$</sub>42.99 <span>1 tone</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="top-products__item">
+								<div class="top-products__item-wrap-image">
+									<a href="#">
+										<img src="images/top-products-image-2.jpg" alt="">
+									</a>
+									<button type="button" class="top-products__favorites-btn"><!-- to-favorites -->
+										<svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+										</svg>
+									</button>
+								</div>
+								<table class="top-products__item-content">
+									<thead>
+										<tr>
+											<th>Madrid</th>
+											<th>Yesterday 07:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Watermelon</td>
+											<td><sub>$</sub>300.00 <span>1 tone</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="top-products__item">
+								<div class="top-products__item-wrap-image">
+									<a href="#">
+										<img src="images/top-products-image-3.jpg" alt="">
+									</a>
+									<button type="button" class="top-products__favorites-btn"><!-- to-favorites -->
+										<svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+										</svg>
+									</button>
+								</div>
+								<table class="top-products__item-content">
+									<thead>
+										<tr>
+											<th>Madrid</th>
+											<th>Yesterday 07:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Lime</td>
+											<td><sub>$</sub>42.99 <span>1 kg</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="top-products__item">
+								<div class="top-products__item-wrap-image">
+									<a href="#">
+										<img src="images/top-products-image-4.jpg" alt="">
+									</a>
+									<button type="button" class="top-products__favorites-btn"><!-- to-favorites -->
+										<svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+										</svg>
+									</button>
+								</div>
+								<table class="top-products__item-content">
+									<thead>
+										<tr>
+											<th>Madrid</th>
+											<th>Yesterday 07:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Echinocactus</td>
+											<td><sub>$</sub>42.99 <span>1 unit</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="top-products__item">
+								<div class="top-products__item-wrap-image">
+									<a href="#">
+										<img src="images/top-products-image-5.jpg" alt="">
+									</a>
+									<button type="button" class="top-products__favorites-btn"><!-- to-favorites -->
+										<svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+										</svg>
+									</button>
+								</div>
+								<table class="top-products__item-content">
+									<thead>
+										<tr>
+											<th>Madrid</th>
+											<th>Yesterday 07:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Shifeng 244 (4x4) 24 hp, tractor</td>
+											<td><sub>$</sub>128 400.00 <span>1 unit</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="top-products__item">
+								<div class="top-products__item-wrap-image">
+									<a href="#">
+										<img src="images/top-products-image-6.jpg" alt="">
+									</a>
+									<button type="button" class="top-products__favorites-btn"><!-- to-favorites -->
+										<svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+										</svg>
+									</button>
+								</div>
+								<table class="top-products__item-content">
+									<thead>
+										<tr>
+											<th>Madrid</th>
+											<th>Yesterday 07:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Royal papaya</td>
+											<td><sub>$</sub>130.99 <span>1 kg</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="top-products__item">
+								<div class="top-products__item-wrap-image">
+									<a href="#">
+										<img src="images/top-products-image-1.jpg" alt="">
+									</a>
+									<button type="button" class="top-products__favorites-btn"><!-- to-favorites -->
+										<svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+										</svg>
+									</button>
+								</div>
+								<table class="top-products__item-content">
+									<thead>
+										<tr>
+											<th>Madrid</th>
+											<th>Yesterday 07:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Fresh and flavorful tomatoes</td>
+											<td><sub>$</sub>42.99 <span>1 tone</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="top-products__item">
+								<div class="top-products__item-wrap-image">
+									<a href="#">
+										<img src="images/top-products-image-2.jpg" alt="">
+									</a>
+									<button type="button" class="top-products__favorites-btn"><!-- to-favorites -->
+										<svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+										</svg>
+									</button>
+								</div>
+								<table class="top-products__item-content">
+									<thead>
+										<tr>
+											<th>Madrid</th>
+											<th>Yesterday 07:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Watermelon</td>
+											<td><sub>$</sub>300.00 <span>1 tone</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="top-products__item">
+								<div class="top-products__item-wrap-image">
+									<a href="#">
+										<img src="images/top-products-image-3.jpg" alt="">
+									</a>
+									<button type="button" class="top-products__favorites-btn"><!-- to-favorites -->
+										<svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+										</svg>
+									</button>
+								</div>
+								<table class="top-products__item-content">
+									<thead>
+										<tr>
+											<th>Madrid</th>
+											<th>Yesterday 07:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Lime</td>
+											<td><sub>$</sub>42.99 <span>1 kg</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="top-products__item">
+								<div class="top-products__item-wrap-image">
+									<a href="#">
+										<img src="images/top-products-image-4.jpg" alt="">
+									</a>
+									<button type="button" class="top-products__favorites-btn"><!-- to-favorites -->
+										<svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+										</svg>
+									</button>
+								</div>
+								<table class="top-products__item-content">
+									<thead>
+										<tr>
+											<th>Madrid</th>
+											<th>Yesterday 07:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Echinocactus</td>
+											<td><sub>$</sub>42.99 <span>1 unit</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="top-products__item">
+								<div class="top-products__item-wrap-image">
+									<a href="#">
+										<img src="images/top-products-image-5.jpg" alt="">
+									</a>
+									<button type="button" class="top-products__favorites-btn"><!-- to-favorites -->
+										<svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+										</svg>
+									</button>
+								</div>
+								<table class="top-products__item-content">
+									<thead>
+										<tr>
+											<th>Madrid</th>
+											<th>Yesterday 07:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Shifeng 244 (4x4) 24 hp, tractor</td>
+											<td><sub>$</sub>128 400.00 <span>1 unit</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="top-products__item">
+								<div class="top-products__item-wrap-image">
+									<a href="#">
+										<img src="images/top-products-image-6.jpg" alt="">
+									</a>
+									<button type="button" class="top-products__favorites-btn"><!-- to-favorites -->
+										<svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+										</svg>
+									</button>
+								</div>
+								<table class="top-products__item-content">
+									<thead>
+										<tr>
+											<th>Madrid</th>
+											<th>Yesterday 07:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Royal papaya</td>
+											<td><sub>$</sub>130.99 <span>1 kg</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+               </div>
+				</div>
+
+         </div>
+      </main>
+		<footer class="footer">
+    <div class="n_container">
+        <div class="footer__columns">
+            <div class="footer__column footer-first-column">
+                <div class="footer__blockLogo">
+                    <img src="images/footer-logo.png" alt="Agro Took">
+                    <h2>Agro Took</h2>
+                </div>
+                <div class="footer__appButtons">
+                    <a href="#">
+                        <img src="images/svg/footer-app-google.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/svg/footer-app-store.svg" alt="">
+                    </a>
+                </div>
+                <p class="footer-copyright">2024 Agro Took.<br> All right reserved.</p>
+            </div>
+            <div data-da="footer-first-column, 1, 720" class="footer__column">
+                <div class="footer__columnBlock">
+                    <h3>About us</h3>
+                    <ul>
+                        <li><a href="#">About AGRO TOOK</a></li>
+                        <li><a href="#">Mobile application</a></li>
+                        <li><a href="#">Advertising</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Favorites</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock last">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Public offer</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	</div>
+	
+   <script src="js/script.min.js?_v=20241222211235"></script>
+
+   <script src="files/js/jquery-3.6.1.min.js?_v=20241222211235"></script>
+
+   <script src="files/select2/js/select2.full.min.js?_v=20241222211235"></script>
+   <script src="files/select2/js/init.js?_v=20241222211235"></script>
+	
+</body>
+</html>
