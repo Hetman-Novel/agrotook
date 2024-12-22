@@ -493,3 +493,57 @@ window.addEventListener('resize', toggleSliders2);
 window.addEventListener('orientationchange', toggleSliders2);
 
 /* <- news-slider */
+
+/* preview-slider -> */
+let swiper = new Swiper(".preview-bottom-slider", {
+   loop: true,
+   spaceBetween: 3,
+   slidesPerView: 6,
+   watchSlidesProgress: true,
+   preloadImages: false,
+   lazy: {
+      loadOnTransitionStart: false,
+      loadPrewNext: false,
+   },
+   watchSlidesProgress: true,
+   watchSlidesVisibility: true,
+   watchOverflow: true,
+   breakpoints: {
+      0: {
+         slidesPerView: 3,
+      },
+      401: {
+         slidesPerView: 4,
+      },
+      481: {
+         slidesPerView: 5,
+      },
+      576: {
+         slidesPerView: 6,
+      }
+   },
+});
+let swiper2 = new Swiper(".preview-slider", {
+   loop: true,
+   spaceBetween: 1,
+   effect: 'fade',
+   fadeEffect: {
+      crossFade: true
+   },
+   navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
+   preloadImages: false,
+   lazy: {
+      loadOnTransitionStart: false,
+      loadPrewNext: false,
+   },
+   watchSlidesProgress: true,
+   watchSlidesVisibility: true,
+   thumbs: {
+     swiper: swiper,
+   },
+   watchOverflow: true,
+});
+/* <- preview-slider */
