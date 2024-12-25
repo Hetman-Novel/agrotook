@@ -9273,9 +9273,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 .create-add__additional-images {
   display: none;
-  margin: 0 -7.5px 0;
+  margin: 0 -12px 0;
   overflow-x: auto;
   padding-top: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .create-add__additional-images {
+    margin-right: -32px;
+    padding-right: 32px;
+  }
 }
 @media screen and (max-width: 575.98px) {
   .create-add__additional-images {
