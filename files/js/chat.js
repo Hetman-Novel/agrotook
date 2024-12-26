@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
          correspondingParentTabContent.classList.add('list-contacts-active');
       });
    });
-   var subTabs = document.querySelectorAll('.chat__uread-users .chat__user');
+   var subTabs = document.querySelectorAll('.chat__user-wrap-content, .show-messages');
    subTabs.forEach(function (subTab) {
       subTab.addEventListener('click', function (event) {
          event.stopPropagation(); // Stop event bubbling
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
          var correspondingSubTabContent = document.querySelector('.chat__item .chat__wrap-message[data-tabcontent="' + subTabId + '"]');
 
          // Remove active classes from all sub-tabs and contents
-         document.querySelectorAll('.chat__uread-users .chat__user').forEach(function (subTab) {
+         document.querySelectorAll('.chat__user-wrap-content, .show-messages').forEach(function (subTab) {
             subTab.classList.remove('chat__wrap-message');
          });
          document.querySelectorAll('.chat__wrap-message').forEach(function (content) {
@@ -212,5 +212,63 @@ document.addEventListener("DOMContentLoaded", function () {
       messageField.addEventListener('input', checkFieldContent); // Track text input in the field
       checkFieldContent(); // Check initially in case there's already content in the field
    });
-
 });
+
+// Check for touch device
+if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+   document.addEventListener('DOMContentLoaded', () => {
+      // Handler for elements with class .chat__user
+      document.querySelectorAll('.chat__user').forEach(user => {
+         user.addEventListener('touchstart', (e) => {
+            // Remove the show class from all other .chat__user
+            document.querySelectorAll('.chat__user').forEach(otherUser => {
+               if (otherUser !== user) {
+                  otherUser.classList.remove('show');
+               }
+            });
+            user.classList.add('show'); // Add the show class to the .chat__user element
+         });
+      });
+
+      // Handler for elements with class .show-messages
+      document.querySelectorAll('.show-messages').forEach(showMessage => {
+         showMessage.addEventListener('click', (e) => {
+            const parentUser = showMessage.closest('.chat__user');
+            if (parentUser) {
+               parentUser.classList.remove('show'); // Remove the show class from all .chat__user
+            }
+         });
+      });
+
+      // Handler for elements with class .delete-chat
+      document.querySelectorAll('.delete-chat').forEach(showMessage => {
+         showMessage.addEventListener('click', (e) => {
+            const deleteChat = showMessage.closest('.chat__user');
+            if (deleteChat) {
+               deleteChat.classList.remove('show'); // Remove the show class from all .chat__user
+            }
+         });
+      });
+
+      // Handler for elements with class .saved-chat
+      document.querySelectorAll('.saved-chat').forEach(showMessage => {
+         showMessage.addEventListener('click', (e) => {
+            e.preventDefault();
+            const savedChat = showMessage.closest('.chat__user');
+            if (savedChat) {
+               savedChat.classList.remove('show'); // Remove the show class from all .chat__user
+            }
+         });
+      });
+   });
+}
+
+// If the touch screen adds class... to...
+function addTouchClassToChat() {
+   const chatElement = document.querySelector('.main.chat');
+   if (!chatElement) return; // Check if the element exists
+   if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+      chatElement.classList.add('touch-device');
+   }
+}
+document.addEventListener('DOMContentLoaded', addTouchClassToChat); // Run the function after the page loads
