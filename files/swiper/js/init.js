@@ -42,11 +42,7 @@ if (directionsSlider) {
          el: '#directions-pagination',
          clickable: true,
       },
-      autoplay: {
-         delay: 5000,
-         stopOnLastSlide: false,
-         disableOnInteraction: false,
-      },
+      
       breakpoints: {
          0: {
             slidesPerView: '1',
@@ -67,6 +63,11 @@ if (directionsSlider) {
          1025: {
             slidesPerView: '5',
             slidesPerGroup: 1,
+			autoplay: {
+			 delay: 5000,
+			 stopOnLastSlide: false,
+			 disableOnInteraction: false,
+		   },
          }
       },
    });
@@ -116,13 +117,17 @@ function initSliders() {
                loadOnTransitionStart: false,
                loadPrewNext: false,
             },
-            autoplay: {
-               delay: 8000,
-               stopOnLastSlide: false,
-               disableOnInteraction: false,
-            },
             watchSlidesProgress: true,
             watchSlidesVisibility: true,
+			breakpoints: {
+				 1025: {
+					autoplay: {
+					 delay: 8000,
+					 stopOnLastSlide: false,
+					 disableOnInteraction: false,
+				   },
+				 }
+			  },
          });
 
          swiperInstances.push(newSwiper);
@@ -192,11 +197,6 @@ if (whatThinkAgroTookSlider) {
          el: '#what-think-agro-took-pagination',
          clickable: true,
       },
-      autoplay: {
-         delay: 4000,
-         stopOnLastSlide: true,
-         disableOnInteraction: false,
-      },
       breakpoints: {
          0: {
             autoHeight: true,
@@ -210,7 +210,14 @@ if (whatThinkAgroTookSlider) {
          },
          860: {
             spaceBetween: 50,
-         }
+         },
+		 1025: {
+			autoplay: {
+			 delay: 4000,
+			 stopOnLastSlide: false,
+			 disableOnInteraction: false,
+		   },
+		 }
       },
    });
 }
@@ -236,11 +243,6 @@ if (blocksWithPictureSlider) {
          el: '#blocks-with-picture-slider-pagination',
          clickable: true,
       },
-      autoplay: {
-         delay: 5000,
-         stopOnLastSlide: true,
-         disableOnInteraction: false,
-      },
       breakpoints: {
          0: {
             autoHeight: true,
@@ -255,7 +257,14 @@ if (blocksWithPictureSlider) {
             speed: 3000,
             slidesPerView: '2',
             slidesPerGroup: 1,
-         }
+         },
+		 1025: {
+			autoplay: {
+			 delay: 5000,
+			 stopOnLastSlide: true,
+			 disableOnInteraction: false,
+		   },
+		 }
       },
    });
 }
@@ -317,11 +326,15 @@ function initSliders3() {
                },
                watchSlidesProgress: true,
                watchSlidesVisibility: true,
-               autoplay: {
-                  delay: 8000,
-                  stopOnLastSlide: false,
-                  disableOnInteraction: false,
-               },
+			breakpoints: {
+				 1025: {
+					autoplay: {
+					 delay: 8000,
+					 stopOnLastSlide: false,
+					 disableOnInteraction: false,
+				   },
+				 }
+			  },
             });
 
             swiperInstances3.push(newSwipers3);
@@ -433,11 +446,15 @@ function initSliders2() {
                },
                watchSlidesProgress: true,
                watchSlidesVisibility: true,
-               autoplay: {
-                  delay: 8000,
-                  stopOnLastSlide: false,
-                  disableOnInteraction: false,
-               },
+				breakpoints: {
+				 1025: {
+					autoplay: {
+					 delay: 8000,
+					 stopOnLastSlide: false,
+					 disableOnInteraction: false,
+				   },
+				 }
+			  },
             });
 
             swiperInstances2.push(newSwipers2);
