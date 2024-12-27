@@ -18,7 +18,7 @@
 <body>
 	<div class="wrapper">
 		
-		<header class="header bg-backdrop-filter">
+		<header class="header bg-color">
 			<div class="n_container">
 				<div class="header__left">
 					<a href="/agrotook/">
@@ -196,60 +196,117 @@
 				</div>
 			</div>
 		</header>
-		<main class="main log-in">
-         <img src="images/bg-login-page.jpg" alt="" class="log-in__bg">
+		<main class="main log-in two">
          <div class="n_container">
-            <div class="log-in__wrap-form bg-backdrop-filter">
-               
-               <form action="#" class="log-in-form">
-                  <div class="log-in-form__blocks">
-                     <div class="log-in-form__block block-active">
-                        <h1 class="log-in-form__block-title">Login</h1>
-                        <p class="log-in-form__block-text">Log in with phone number</p>
-                        <div class="log-in-form__wrap-select-phone">
-                           <div class="select-curent">
-                              <p><img src="images/ua-icon.png" alt=""> Ukraine</p>
+
+            <div class="log-in__columns">
+               <div class="log-in__column">
+                  <img src="images/img-login-page.jpg" alt="">
+               </div>
+               <div class="log-in__column">
+                  <div class="log-in__wrap-form bg-color">
+                     <form action="#" class="log-in-form">
+                        <div class="log-in-form__blocks">
+                           <div class="log-in-form__block block-active">
+                              <h1 class="log-in-form__block-title">Login</h1>
+                              <p class="log-in-form__block-text">Log in with phone number</p>
+                              <div class="log-in-form__wrap-select-phone">
+                                 <div class="select-curent">
+                                    <p><img src="images/ua-icon.png" alt=""> Ukraine</p>
+                                 </div>
+                                 <div class="select-wrap-input">
+                                    <span>Введіть ваш номер телефону</span>
+                                    <p>+38<input type="number"></p>
+                                 </div>
+                              </div>
                            </div>
-                           <div class="select-wrap-input">
-                              <span>Введіть ваш номер телефону</span>
-                              <p>+38<input type="number"></p>
+                           <div data-tabcontent="code-from-sms" class="log-in-form__block">
+                              <h2 class="log-in-form__block-title">Enter the code</h2>
+                              <p class="log-in-form__block-text">Enter the confirmation code from the phone number +38 <span class="log-in-entered-number"></span></p>
+                              <div class="wrap-fields-number valid"><!-- no-valid valid -->
+                                 <input type="number">
+                                 <input type="number">
+                                 <input type="number">
+                                 <input type="number">
+                              </div>
+                              <button type="button" class="log-in-form__block-button" disabled>Confirm</button>
+                              <button type="button" class="log-in-form__block-info">
+                                 <span class="info">Resend <strong>in <span class="log-in-form-timer">00:59</span> seconds</strong></span>
+                                 <span class="info">I did not receive a verification code<br> Call +38 <span class="log-in-entered-number"></span></span>
+                              </button>
                            </div>
                         </div>
-                     </div>
-                     <div data-tabcontent="code-from-sms" class="log-in-form__block">
-                        <h2 class="log-in-form__block-title">Enter the code</h2>
-                        <p class="log-in-form__block-text">Enter the confirmation code from the phone number +38 <span class="log-in-entered-number"></span></p>
-                        <div class="wrap-fields-number "><!-- no-valid valid -->
-                           <input type="number">
-                           <input type="number">
-                           <input type="number">
-                           <input type="number">
+                        <div class="log-in-form__wrap-submit two-button">
+                           <a href="#" class="log-in-form__button">Cancel</a>
+                           <button type="button" data-tab="code-from-sms" class="log-in-form__button log-in-button disabled">Log in</button>
                         </div>
-                        <button type="button" class="log-in-form__block-button" disabled>Confirm</button>
-                        <button type="button" class="log-in-form__block-info">
-                           <span class="info">Resend <strong>in <span class="log-in-form-timer">00:59</span> seconds</strong></span>
-                           <span class="info">I did not receive a verification code<br> Call +38 <span class="log-in-entered-number"></span></span>
-                        </button>
-                     </div>
+                        <div class="log-in-form__wrap-submit one-button-submit">
+                           <button type="submit" class="log-in-form__button">Log in</button>
+                        </div>
+                        <div class="log-in-form__social-buttons">
+                           <p>Create free account</p>
+                           <a href="#"><img src="images/svg/google-icon.svg" alt=""> Log in with Google</a>
+                           <a href="#"><img src="images/svg/apple-icon.svg" alt=""> Log in with Apple</a>
+                           <a href="#"><img src="images/svg/facebook-icon.svg" alt=""> Log in with Facebook</a>
+                        </div>
+                     </form>
                   </div>
-                  <div class="log-in-form__wrap-submit two-button">
-                     <a href="#" class="log-in-form__button">Cancel</a>
-                     <button type="button" data-tab="code-from-sms" class="log-in-form__button log-in-button disabled">Log in</button>
-                  </div>
-                  <div class="log-in-form__wrap-submit one-button-submit">
-                     <button type="submit" class="log-in-form__button">Log in</button>
-                  </div>
-                  <div class="log-in-form__social-buttons">
-                     <p>Create free account</p>
-                     <a href="#"><img src="images/svg/google-icon.svg" alt=""> Log in with Google</a>
-                     <a href="#"><img src="images/svg/apple-icon.svg" alt=""> Log in with Apple</a>
-                     <a href="#"><img src="images/svg/facebook-icon.svg" alt=""> Log in with Facebook</a>
-                  </div>
-               </form>
+               </div>
             </div>
+
          </div>
       </main>
-		
+		<footer class="footer">
+    <div class="n_container">
+        <div class="footer__columns">
+            <div class="footer__column footer-first-column">
+                <div class="footer__blockLogo">
+                    <img src="images/footer-logo.png" alt="Agro Took">
+                    <h2>Agro Took</h2>
+                </div>
+                <div class="footer__appButtons">
+                    <a href="#">
+                        <img src="images/svg/footer-app-google.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/svg/footer-app-store.svg" alt="">
+                    </a>
+                </div>
+                <p class="footer-copyright">2024 Agro Took.<br> All right reserved.</p>
+            </div>
+            <div data-da="footer-first-column, 1, 720" class="footer__column">
+                <div class="footer__columnBlock">
+                    <h3>About us</h3>
+                    <ul>
+                        <li><a href="#">About AGRO TOOK</a></li>
+                        <li><a href="#">Mobile application</a></li>
+                        <li><a href="#">Advertising</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Favorites</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock last">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Public offer</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 	</div>
 	
    <script src="js/script.min.js?_v=20241227021444"></script>
