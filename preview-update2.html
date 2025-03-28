@@ -196,14 +196,21 @@
 				</div>
 			</div>
 		</header>
-		<main class="main preview">
+		<main class="main preview preview-update">
          <div class="n_container">
-				<div class="page__head there-is-a-button">
-					<h1>Preview</h1>
-               <div class="page__head-buttons">
-                  <a href="#">Back</a>
-                  <a href="#" class="active">Publish</a>
-               </div>
+				<div class="page__head">
+               <ul class="breadcrumbs">
+                  <li class="breadcrumbs__item">
+                     <a class="breadcrumbs__link" href="/">Главная</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                     <a class="breadcrumbs__link" href="categories.html">Фрукты</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                     <span class="breadcrumbs__name">Банан</span>
+                  </li>
+               </ul>
+					<h1>Банан</h1>
 				</div>
             <div class="preview__items">
                <div class="preview__item">
@@ -277,15 +284,15 @@
                         </div>
                      </div>
                      <div class="preview__description">
-                        <div class="labels">
+                        <!--<div class="labels">
                            <div class="label">
                               <p><img src="images/svg/crown-simple.svg" alt="crown">Advertise</p>
                            </div>
                            <div class="label">
                               <p><img src="images/svg/euro.svg" alt="euro">Tariffs</p>
                            </div>
-                        </div>
-                        <h3>Description</h3>
+                        </div>-->
+                        <h3>Описание</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut felis nibh. Nulla pharetra ipsum eget orci venenatis, id posuere diam posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus ac libero ac justo elementum malesuada lobortis non mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet nisi purus, at maximus sem efficitur semper. In vitae sapien et turpis ullamcorper semper eu non nisl.</p>
                      </div>
                   </div>
@@ -294,16 +301,16 @@
                   <aside class="preview__sidebar">
                      <div class="preview__sidebar-widget">
                         <div class="head">
-                           <p>Yesterday 16.30<br> Zaporiz<br> hia</p>
+                           <p>Вчера 16:30<br> Запорожье</p>
                            <a href="#" class="icon"><!-- active -->
                               <svg width="24" height="21" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                  <path d="M2.64592 7.93344L2.64592 7.93343C2.07753 7.1946 1.69606 6.54496 1.48439 5.98251L1.48436 5.98242C1.2698 5.41264 1.16414 4.84305 1.16414 4.27155C1.16414 3.16842 1.53999 2.26403 2.29232 1.5293C3.04564 0.793612 3.97372 0.423421 5.10547 0.423421C5.84978 0.423421 6.53982 0.601596 7.18255 0.958643L7.18261 0.958675C7.82686 1.31644 8.39871 1.83875 8.89566 2.53757L9.23181 3.01028L9.57959 2.54605C10.1241 1.8192 10.7138 1.2902 11.3444 0.943048C11.9747 0.596341 12.6496 0.423421 13.376 0.423421C14.5077 0.423421 15.4358 0.793612 16.1891 1.5293C16.9415 2.26403 17.3173 3.16842 17.3173 4.27155C17.3173 4.84305 17.2116 5.41264 16.9971 5.98242L16.9971 5.98251C16.7854 6.54496 16.4039 7.1946 15.8355 7.93343L15.8355 7.93344C15.268 8.67126 14.496 9.52404 13.5149 10.4929C12.5329 11.4626 11.2826 12.6225 9.76267 13.9732C9.76261 13.9732 9.76255 13.9733 9.76249 13.9733L9.24072 14.4348L8.71916 13.9735C8.71904 13.9734 8.71893 13.9733 8.71881 13.9732C7.20082 12.6225 5.95095 11.4626 4.96778 10.4928C3.98576 9.52393 3.21344 8.67119 2.64592 7.93344Z" stroke="black" stroke-width="0.846841"/>
                               </svg>
                            </a>
                         </div>
-                        <h2 class="widget-title">Banana</h2>
-                        <p class="widget-price"><sub>€</sub>1000 / <span>kg</span></p>
-                        <div class="widget-block-author">
+                        <h2 class="widget-title">Банан</h2>
+                        <p class="widget-price"><sub>€</sub>1000 / <span>кг</span></p>
+                        <div class="widget-block-author no-social-icons">
                            <div class="columns">
                               <div class="column">
                                  <div class="wrap-photo online">
@@ -312,13 +319,19 @@
                                  </div>
                               </div>
                               <div class="column">
-                                 <p class="widget-name">Anastasiia Iatsenko</p>
-                                 <p class="widget-position">Kherson</p>
-                                 <p class="widget-status">Online</p>
+                                 <p class="widget-name">Анастасия Яценко</p>
+                                 <p class="widget-position">Херсон</p>
+                                 <p class="widget-status">Онлайн</p>
                               </div>
                            </div>
-                           <a href="#" class="button active">All autor’s adds</a>
-                           <ul class="widget-icons">
+                           <a href="#" class="button active updated">Все объявления автора</a>
+                           <div class="widget-block-author__wrap-btn">
+                              <a href="#" class="icon">
+                                 <img src="images/svg/widget-chats-icon-2.svg" alt="">
+                              </a>
+                              <a href="buy-subscription-for-buyers-access-is-restricted.html" class="button green">Открыть контакты</a>
+                           </div>
+                           <!--<ul class="widget-icons">
                               <li>
                                  <a href="#">
                                     <img src="images/svg/phone-call.svg" alt="">
@@ -339,7 +352,7 @@
                                     <img src="images/svg/widget-whatsapp-icon.svg" alt="">
                                  </a>
                               </li>
-                           </ul>
+                           </ul>-->
                         </div>
                         <div class="widget-bottom">
                            <div class="columns">
@@ -371,7 +384,7 @@
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2393 8.66634H3.33333V2.66634H12.2393L10.3933 5.66634L12.2393 8.66634ZM13.4327 1.33301H2V13.9997L2.66667 14.6663L3.33333 13.9997V9.99967H13.4327L14 8.98434L11.9587 5.66634L14 2.34901L13.4327 1.33301Z" fill="#C62A00"/>
                                     </svg>
-                                    <a href="#">Complain</a>
+                                    <a href="#">Жалоба</a>
                                  </div>
                               </div>
                            </div>
@@ -379,7 +392,7 @@
                      </div>
                      <div class="preview__sidebar-widget">
                         <div class="head">
-                           <h6>User</h6>
+                           <h6>Пользователь</h6>
                         </div>
                         <div class="widget-block-author two">
                            <div class="columns">
@@ -389,23 +402,23 @@
                                  </div>
                               </div>
                               <div class="column">
-                                 <p class="widget-name">Anastasiia Iatsenko</p>
-                                 <p>on Agro Took since September 2021</p>
-                                 <p>Online November 19, 2024</p>
-                                 <a href="#">All ads by the author</a>
+                                 <p class="widget-name">Анастасия Яценко</p>
+                                 <p>на Agro Took с сентября 2021</p>
+                                 <p>Онлайн 19 ноября 2024</p>
+                                 <a href="#">Все объявления автора</a>
                               </div>
                            </div>
                         </div>
                      </div>
                      <div class="preview__sidebar-widget">
                         <div class="head">
-                           <h6>Location</h6>
+                           <h6>Местоположение</h6>
                         </div>
                         <div class="columns">
                            <div class="column">
                               <p>
                                  <img src="images/svg/widget-location-icon.svg" alt="">
-                                 Ukraine <span>Kharkiv</span>
+                                 Украина <span>Харьков</span>
                               </p>
                            </div>
                            <div class="column wrap-map">
@@ -418,15 +431,15 @@
             </div>
             <div class="all-ads-by-author preview-block-bottom">
                <div class="all-ads-by-author__wrap-title">
-                  <h2>All ads by the author</h2>
-                  <a href="#">View all</a>
+                  <h2>Все объявления автора</h2>
+                  <a href="#">Посмотреть все</a>
                </div>
                <div class="top-products-review-page">
                   <div class="top-products__items review-page">
                      <div class="top-products__item">
                         <div class="top-products__item-wrap-image">
                            <a href="#">
-                              <img src="images/top-products-image-5.jpg" alt="">
+                              <img src="images/top-products-image-1.jpg" alt="">
                            </a>
                            <button type="button" class="top-products__favorites-btn">
                               <svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -437,40 +450,14 @@
                         <table class="top-products__item-content">
                            <thead>
                               <tr>
-                                 <th>Madrid</th>
-                                 <th>Yesterday 07:30</th>
+                                 <th>Мадрид</th>
+                                 <th>Вчера 07:30</th>
                               </tr>
                            </thead>
                            <tbody>
                               <tr>
-                                 <td>Shifeng 244 (4x4) 24 hp, tractor</td>
-                                 <td><sub>$</sub>128 400.00 <span>1 unit</span></td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                     <div class="top-products__item">
-                        <div class="top-products__item-wrap-image">
-                           <a href="#">
-                              <img src="images/top-products-image-6.jpg" alt="">
-                           </a>
-                           <button type="button" class="top-products__favorites-btn">
-                              <svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
-                              </svg>
-                           </button>
-                        </div>
-                        <table class="top-products__item-content">
-                           <thead>
-                              <tr>
-                                 <th>Madrid</th>
-                                 <th>Yesterday 07:30</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td>Royal papaya</td>
-                                 <td><sub>$</sub>130.99 <span>1 kg</span></td>
+                                 <td>Кактус</td>
+                                 <td>42.99$ <span>1 тонна</span></td>
                               </tr>
                            </tbody>
                         </table>
@@ -489,14 +476,66 @@
                         <table class="top-products__item-content">
                            <thead>
                               <tr>
-                                 <th>Madrid</th>
-                                 <th>Yesterday 07:30</th>
+                                 <th>Мадрид</th>
+                                 <th>Вчера 07:30</th>
                               </tr>
                            </thead>
                            <tbody>
                               <tr>
-                                 <td>Fresh and flavorful tomatoes</td>
-                                 <td><sub>$</sub>42.99 <span>1 tone</span></td>
+                                 <td>Кактус</td>
+                                 <td>42.99$ <span>1 тонна</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="top-products__item">
+                        <div class="top-products__item-wrap-image">
+                           <a href="#">
+                              <img src="images/top-products-image-1.jpg" alt="">
+                           </a>
+                           <button type="button" class="top-products__favorites-btn">
+                              <svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+                              </svg>
+                           </button>
+                        </div>
+                        <table class="top-products__item-content">
+                           <thead>
+                              <tr>
+                                 <th>Мадрид</th>
+                                 <th>Вчера 07:30</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Кактус</td>
+                                 <td>42.99$ <span>1 тонна</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="top-products__item">
+                        <div class="top-products__item-wrap-image">
+                           <a href="#">
+                              <img src="images/top-products-image-1.jpg" alt="">
+                           </a>
+                           <button type="button" class="top-products__favorites-btn">
+                              <svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+                              </svg>
+                           </button>
+                        </div>
+                        <table class="top-products__item-content">
+                           <thead>
+                              <tr>
+                                 <th>Мадрид</th>
+                                 <th>Вчера 07:30</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Кактус</td>
+                                 <td>42.99$ <span>1 тонна</span></td>
                               </tr>
                            </tbody>
                         </table>
@@ -505,13 +544,13 @@
                </div>
             </div>
             <div class="similar-ads preview-block-bottom">
-               <h2>Similar ads</h2>
+               <h2>Похожие объявления</h2>
                <div class="top-products-review-page">
                   <div class="top-products__items review-page">
                      <div class="top-products__item">
                         <div class="top-products__item-wrap-image">
                            <a href="#">
-                              <img src="images/top-products-image-5.jpg" alt="">
+                              <img src="images/top-products-image-1.jpg" alt="">
                            </a>
                            <button type="button" class="top-products__favorites-btn">
                               <svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -522,66 +561,14 @@
                         <table class="top-products__item-content">
                            <thead>
                               <tr>
-                                 <th>Madrid</th>
-                                 <th>Yesterday 07:30</th>
+                                 <th>Мадрид</th>
+                                 <th>Вчера 07:30</th>
                               </tr>
                            </thead>
                            <tbody>
                               <tr>
-                                 <td>Shifeng 244 (4x4) 24 hp, tractor</td>
-                                 <td><sub>$</sub>128 400.00 <span>1 unit</span></td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                     <div class="top-products__item">
-                        <div class="top-products__item-wrap-image">
-                           <a href="#">
-                              <img src="images/top-products-image-5.jpg" alt="">
-                           </a>
-                           <button type="button" class="top-products__favorites-btn">
-                              <svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
-                              </svg>
-                           </button>
-                        </div>
-                        <table class="top-products__item-content">
-                           <thead>
-                              <tr>
-                                 <th>Madrid</th>
-                                 <th>Yesterday 07:30</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td>Shifeng 244 (4x4) 24 hp, tractor</td>
-                                 <td><sub>$</sub>128 400.00 <span>1 unit</span></td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                     <div class="top-products__item">
-                        <div class="top-products__item-wrap-image">
-                           <a href="#">
-                              <img src="images/top-products-image-6.jpg" alt="">
-                           </a>
-                           <button type="button" class="top-products__favorites-btn">
-                              <svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
-                              </svg>
-                           </button>
-                        </div>
-                        <table class="top-products__item-content">
-                           <thead>
-                              <tr>
-                                 <th>Madrid</th>
-                                 <th>Yesterday 07:30</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td>Royal papaya</td>
-                                 <td><sub>$</sub>130.99 <span>1 kg</span></td>
+                                 <td>Кактус</td>
+                                 <td>42.99$ <span>1 тонна</span></td>
                               </tr>
                            </tbody>
                         </table>
@@ -600,14 +587,66 @@
                         <table class="top-products__item-content">
                            <thead>
                               <tr>
-                                 <th>Madrid</th>
-                                 <th>Yesterday 07:30</th>
+                                 <th>Мадрид</th>
+                                 <th>Вчера 07:30</th>
                               </tr>
                            </thead>
                            <tbody>
                               <tr>
-                                 <td>Fresh and flavorful tomatoes</td>
-                                 <td><sub>$</sub>42.99 <span>1 tone</span></td>
+                                 <td>Кактус</td>
+                                 <td>42.99$ <span>1 тонна</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="top-products__item">
+                        <div class="top-products__item-wrap-image">
+                           <a href="#">
+                              <img src="images/top-products-image-1.jpg" alt="">
+                           </a>
+                           <button type="button" class="top-products__favorites-btn">
+                              <svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+                              </svg>
+                           </button>
+                        </div>
+                        <table class="top-products__item-content">
+                           <thead>
+                              <tr>
+                                 <th>Мадрид</th>
+                                 <th>Вчера 07:30</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Кактус</td>
+                                 <td>42.99$ <span>1 тонна</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="top-products__item">
+                        <div class="top-products__item-wrap-image">
+                           <a href="#">
+                              <img src="images/top-products-image-1.jpg" alt="">
+                           </a>
+                           <button type="button" class="top-products__favorites-btn">
+                              <svg width="18" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
+                              </svg>
+                           </button>
+                        </div>
+                        <table class="top-products__item-content">
+                           <thead>
+                              <tr>
+                                 <th>Мадрид</th>
+                                 <th>Вчера 07:30</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Кактус</td>
+                                 <td>42.99$ <span>1 тонна</span></td>
                               </tr>
                            </tbody>
                         </table>
@@ -668,12 +707,76 @@
         </div>
     </div>
 </footer>
+
+      <!--<a href="#inviting-text" class="popup-link">Запустить окно</a>-->
+      <!-- этот id inviting-text используется в функции коков checkCookie() расположена нииже -->
+      <div id="inviting-text" class="popup popup-inviting-text">
+         <div class="popup__body">
+            <div class="popup__content">
+               <a href="" class="popup__close close-popup">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#popup-clip0_4296_71665)">
+                        <path d="M31.25 8.75L8.75 31.25" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31.25 31.25L8.75 8.75" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                     </g>
+                     <defs>
+                        <clipPath id="popup-clip0_4296_71665">
+                           <rect width="40" height="40" fill="white"/>
+                        </clipPath>
+                     </defs>
+                  </svg>
+               </a>
+               <div class="popup-inviting-text__blockIcon">
+                  <img src="images/svg/popup-inviting-text-icon.svg" alt="">
+               </div>
+               <h3 class="popup-inviting-text__title">Мы делаем все, чтобы вы зарабатывали больше</h3>
+               <p>Мы предлагаем воспользоваться реферальной программой и получить PRO-аккаунт на 6 месяцев, чтобы понять, что наша платформа станет для вас надежным партнером.</p>
+               <a href="#" class="popup-inviting-text__button">Подробнее</a>
+            </div>
+         </div>
+      </div>
+
 	</div>
 	
    <script src="js/script.min.js?_v=20250328204124"></script>
 
 	<script src="files/swiper/js/swiper-bundle.min.js?_v=20250328204124"></script>
    <script src="files/swiper/js/init.js?_v=20250328204124"></script>
+
+   <script>
+      function checkCookie() {
+         // задаем имя куки и период действия в днях
+         const cookieName = 'CookieForInvitingText';
+         const cookieDuration = 7;
+
+         // проверяем, существует ли куки с заданным именем
+         const cookieValue = document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + cookieName.replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1");
+         const currentTime = new Date().getTime();
+
+         if (!cookieValue) {
+            // если куки не существует, добавляем классы
+            document.getElementById('inviting-text').classList.add('open');
+            document.body.classList.add('lock');
+         } else {
+            // если куки существует, проверяем период действия
+            const cookieTime = parseInt(cookieValue);
+            const expireTime = cookieTime + cookieDuration * 24 * 60 * 60 * 1000;
+            if (currentTime > expireTime) {
+               // если период действия истек, добавляем классы
+               document.getElementById('inviting-text').classList.add('open');
+               document.body.classList.add('lock');
+            }
+         }
+
+         // устанавливаем новое значение куки
+         document.cookie = `${cookieName}=${currentTime}; expires=${new Date(
+            currentTime + cookieDuration * 24 * 60 * 60 * 1000
+         ).toUTCString()}; path=/`;
+      }
+
+      // вызываем функцию при загрузке страницы
+      window.addEventListener('load', checkCookie);
+   </script>
 	
 </body>
 </html>

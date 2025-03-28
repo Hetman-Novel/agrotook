@@ -12,13 +12,13 @@
    <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250328204124">
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20250328204124">
    <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20250328204124">
-   <title>Chat - Аgro Took</title>
+   <title>Подписки - Аgro Took</title>
 </head>
 
 <body>
 	<div class="wrapper">
 		
-		<header class="header bg-color">
+		<header class="header lock-padding bg-color">
 			<div class="n_container">
 				<div class="header__left">
 					<a href="/agrotook/">
@@ -66,9 +66,8 @@
 					<a href="/agrotook/favorite.html" class="header__icon-favorites">
 						<img src="images/favorite-active.png" alt="">
 					</a>
-					<a href="/agrotook/chat-2.html" class="header__icon-message there-is-sms">
+					<a href="#" class="header__icon-message">
 						<img src="images/svg/message.svg" alt="">
-                  <span>4</span>
 					</a>
 					<div class="header__lang-select">
 						<div class="header__lang-select-current-icon">
@@ -197,25 +196,77 @@
 				</div>
 			</div>
 		</header>
-		<main class="main favorite">
+		<main class="main profile subscriptions">
          <div class="n_container">
 				<div class="page__head">
-					<h1>Chat</h1>
+					<h1>Подписки</h1>
 				</div>
+            <div class="profile__items">
+               <div class="profile__item">
+                  <div id="profile-buttons" class="profile__subButtons">
+                     <button data-subtab="for-sellers" type="button" class="profile__subButton">Для продавцов</button>
+                     <button data-subtab="for-buyers" type="button" class="profile__subButton active">Для покупателей</button>
+                  </div>
+                  <div data-subcontent="for-sellers" class="profile__subTabContent">
+                     
+                     Для продавцов
 
-				<!-- Log in or create a profile -->
-
-				<div class="favorite__block">
-					<h2>Always have important messages at your fingertips!</h2>
-					<p>Sign in or create a profile to save messages on any device.</p>
-					<a href="/log-in.html">Log in or create a profile</a>
-				</div>
-
-				<!-- Log in or create a profile -->
-
+                  </div>
+                  <div data-subcontent="for-buyers" class="profile__subTabContent show-content">
+                     
+                     <div class="subscriptions__block">
+                        <h2 class="subscriptions__blockTitle">Откройте для себя все возможности с PRO-доступом!</h2>
+                        <p class="subscriptions__blockText">Получите неограниченный доступ к контактам продавцов на нашей платформе. Работайте без ограничений, заключайте сделки быстрее и расширяйте свои возможности!</p>
+                        <h3 class="subscriptions__blockSubtitle">Выберите тип подписки</h3>
+                        <div class="subscriptions__columns">
+                           <div class="subscriptions__column">
+                              <h4 class="subscriptions__columnTitle">PRO</h4>
+                              <p class="subscriptions__columnPrice"><span>75 EUR</span> / 6 месяцев</p>
+                              <ul class="subscriptions__columnList">
+                                 <li>Неограниченный просмотр контактов <strong>на 6 месяцев</strong></li>
+                              </ul>
+                              <div class="subscriptions__columnWrapButton">
+                                 <a href="profile-referral-program.html" class="subscriptions__columnGetProForFree">Хотите получить PRO бесплатно?</a>
+                                 <a href="" class="subscriptions__columnButton">Купить</a>
+                              </div>
+                           </div>
+                           <div class="subscriptions__column">
+                              <h4 class="subscriptions__columnTitle">PRO</h4>
+                              <p class="subscriptions__columnPrice"><span>150 EUR</span> / 12 месяцев</p>
+                              <ul class="subscriptions__columnList">
+                                 <li>Неограниченный просмотр контактов на <strong>12 месяцев</strong></li>
+                              </ul>
+                              <div class="subscriptions__columnWrapButton">
+                                 <a href="" class="subscriptions__columnButton">Купить</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="profile__item">
+                  <div class="profile__itemBlock list-buttons">
+                     <div class="profile__tabButtons">
+                        <a href="/agrotook/profile.html" class="profile__tabButton">Мои данные</a>
+                        <a href="/agrotook/profile-my-ads.html" class="profile__tabButton">Мои объявления</a>
+                        <a href="/agrotook/profile-my-reviews.html" class="profile__tabButton">Мои отзывы</a>
+                        <a href="/agrotook/buy-subscription-for-buyers-subscriptions.html" class="profile__tabButton active">Подписки</a>
+                        <a href="/agrotook/profile-top-placement.html" class="profile__tabButton">ТОП-размещение</a>
+                        <a href="/agrotook/profile-referral-program.html" class="profile__tabButton">Реферальная программа</a>
+                        <a href="/agrotook/profile-my-qr-code.html" class="profile__tabButton">Мой QR-код</a>
+                        <a href="/agrotook/profile-help.html" class="profile__tabButton">Помощь</a>
+                        <a href="/agrotook/profile-terms-of-use.html" class="profile__tabButton">Условия использования</a>
+                        <a href="/agrotook/profile-privacy-policy.html" class="profile__tabButton">Политика</a>
+                        <a href="/agrotook/profile-about-agro-took.html" class="profile__tabButton">О компании Agro Took</a>
+                        <a href="#delete-accaunt" class="profile__tabButton popup-link">Удалить аккаунт</a>
+                        <a href="#log-out" class="profile__tabButton popup-link">Выйти из системы</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
       </main>
-		<footer class="footer">
+      <footer class="footer">
     <div class="n_container">
         <div class="footer__columns">
             <div class="footer__column footer-first-column">
@@ -266,9 +317,42 @@
         </div>
     </div>
 </footer>
-	</div>
-	
+
+      <div id="delete-accaunt" class="popup">
+         <div class="popup__body">
+            <div class="popup__content">
+               <!--<a href="" class="popup__close close-popup">X</a>-->
+         
+               <h2>Delete accaunt</h2>
+               <p>Are you sure you want to delete<br> this accaunt?</p>
+               <div class="popup__wrap-bottoms">
+                  <a href="/agrotook/" class="popup__close">Delete</a>
+                  <a href="" class="popup__close close-popup">Cancel</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="log-out" class="popup">
+         <div class="popup__body">
+            <div class="popup__content">
+               <!--<a href="" class="popup__close close-popup">X</a>-->
+         
+               <h2>Log out </h2>
+               <p>Are you sure you want to log out?</p>
+               <div class="popup__wrap-bottoms">
+                  <a href="/agrotook/log-in.html" class="popup__close">Log out</a>
+                  <a href="" class="popup__close close-popup">Cancel</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   
    <script src="js/script.min.js?_v=20250328204124"></script>
-	
+
+   <script src="files/js/profile.js?_v=20250328204124"></script>
+   
 </body>
 </html>
