@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +12,13 @@
    <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250329143458">
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20250329143458">
    <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20250329143458">
-   <title>Мобильное приложение - Аgro Took</title>
+   <title>Обновление платежных реквизитов - Аgro Took</title>
 </head>
 
 <body>
 	<div class="wrapper">
 		
-		<header class="header bg-color">
+		<header class="header lock-padding bg-color">
 			<div class="n_container">
 				<div class="header__left">
 					<a href="/agrotook/">
@@ -196,72 +196,63 @@
 				</div>
 			</div>
 		</header>
-		<main class="main mobile-application">
+		<main class="main update-payment-details">
          <div class="n_container">
 				<div class="page__head">
-					<h1>Мобильное приложение</h1>
+					<h1>Обновление платежных реквизитов</h1>
 				</div>
-
-            <h2 class="mobile-application__title">Покупайте и продавайте с
-               Agro Took легко</h2>
-
-            <div class="mobile-application__columns">
-               <div class="mobile-application__column">
-                  <div class="mobile-application__columnBlockIcon">
-                     <img src="images/svg/mobile-application-icon-1.svg" alt="">
-                  </div>
-                  <h3 class="mobile-application__columnTitle">Находите лучшие предложения</h3>
-                  <p>Быстро ищите нужные товары среди множества объявлений. Используйте фильтры, чтобы найти оптимальный вариант.</p>
-               </div>
-               <div class="mobile-application__column">
-                  <div class="mobile-application__columnBlockIcon">
-                     <img src="images/svg/mobile-application-icon-2.svg" alt="">
-                  </div>
-                  <h3 class="mobile-application__columnTitle">Управляйте сделками онлайн</h3>
-                  <p>Общайтесь с продавцами и покупателями непосредственно в приложении. Уточняйте детали и договаривайтесь о сделках в удобное время.</p>
-               </div>
-               <div class="mobile-application__column">
-                  <div class="mobile-application__columnBlockIcon">
-                     <img src="images/svg/mobile-application-icon-3.svg" alt="">
-                  </div>
-                  <h3 class="mobile-application__columnTitle">Расширяйте возможности бизнеса</h3>
-                  <p>Создавайте профессиональные объявления, анализируйте рынок и находите надежных партнеров для сотрудничества.</p>
-               </div>
-            </div>
-
-            <div class="agro-took-service__block content-active">
-               <div class="agro-took-service__block-column">
-                  <div class="wrap-content bg-color">
-                     <div class="wrap-buttons">
-                        <div class="wrap-button">
-                           <a href="#">
-                              <img src="images/svg/agro-took-service-google-play.svg" alt="">
-                           </a>
-                           <p>Скачайте приложение для Android</p>
-                        </div>
-                        <div class="wrap-button">
-                           <a href="#">
-                              <img src="images/svg/agro-took-service-app-store.svg" alt="">
-                           </a>
-                           <p>Скачайте приложение для iOS</p>
-                        </div>
+            
+            <div class="payment__block js-wrap-payment-form">
+               <form>
+                  <div class="payment__columns">
+                     <div class="payment__column">
+                        <h2 class="payment__columnTitle">Как вы хотите оплатить?</h2>
+                        <p class="payment__columnText">Выберите удобный для вас способ оплаты</p>
+                        <form class="js-wrap-payment-form">
+                           <div class="payment__columnRadioButtons">
+                              <label id="payment-card">
+                                 <input type="radio" name="payment-checked" checked>
+                                 <img src="images/svg/payment-card-icon.svg" alt="">Карта
+                              </label>
+                              <label id="payment-google">
+                                 <input type="radio" name="payment-checked">
+                                 <img src="images/svg/payment-google-icon.svg" alt="">Оплатить
+                              </label>
+                              <label id="payment-apple">
+                                 <input type="radio" name="payment-checked">
+                                 <img src="images/svg/payment-apple-pay-icon.svg" alt="">Apple Pay
+                              </label>
+                           </div>
+                           <div class="payment__columnBlockCard show">
+                              <div class="payment__columnBlockCard-content">
+                                 <h4>Введите информацию о платеже</h4>
+                                 <label for="number-card">Номер платежной карты</label>
+                                 <input type="text" id="number-card">
+                                 <div class="wrap-two-fields">
+                                    <div class="wrap-two-field">
+                                       <label for="valid-until">Действителена до</label>
+                                       <input type="text" id="valid-until">
+                                    </div>
+                                    <div class="wrap-two-field">
+                                       <label for="cvv">СVV</label>
+                                       <input type="text" id="cvv">
+                                    </div>
+                                 </div>
+                                 <label class="label-checkbox"><input type="checkbox"> Сохраните данные для следующего платежа</label>
+                              </div>
+                              <div class="widget-buttons-wrap-buttons">
+                                 <button type="submit" disabled>Обновить</button>
+                              </div>
+                           </div>
+                        </form>
                      </div>
                   </div>
-                  <div class="wrap-content text">
-                     <h3>Agro Took: надежный партнер для вашего бизнеса</h3>
-                     <p>Agro Took — ваш уверенный выбор в мире сельскохозяйственной торговли. Скачайте Agro Took сейчас и найдите лучших поставщиков и покупателей!</p>
-                  </div>
-               </div>
-               <div class="agro-took-service__block-column">
-                  <div class="wrap-content bg-color">
-                     <img src="images/agro-took-service-image.png" alt="">
-                  </div>
-               </div>
+               </form>
             </div>
 
          </div>
       </main>
-		<footer class="footer">
+      <footer class="footer">
     <div class="n_container">
         <div class="footer__columns">
             <div class="footer__column footer-first-column">
@@ -312,9 +303,83 @@
         </div>
     </div>
 </footer>
-	</div>
-	
+   </div>
+   
    <script src="js/script.min.js?_v=20250329143458"></script>
-	
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+         let wrapPaymentForm = document.querySelector('.js-wrap-payment-form');
+         if (!wrapPaymentForm) return;
+
+         let paymentCard = document.getElementById('payment-card');
+         let paymentGoogle = document.getElementById('payment-google');
+         let paymentApple = document.getElementById('payment-apple');
+         let paymentColumnBlockCard = document.querySelector('.payment__columnBlockCard');
+
+         const numberCard = wrapPaymentForm.querySelector("#number-card");
+         const validUntil = wrapPaymentForm.querySelector("#valid-until");
+         const cvv = wrapPaymentForm.querySelector("#cvv");
+         const submitButton = wrapPaymentForm.querySelector("button[type='submit']");
+         function validateCardNumber(input) {
+            input.value = input.value.replace(/\D/g, "").substring(0, 16); // Оставляем только цифры, максимум 16
+            input.value = input.value.replace(/(\d{4})/g, "$1 ").trim(); // Формат 0000 0000 0000 0000
+            return input.value.length === 19; // Длина с пробелами должна быть 19 символов
+         }
+         function validateValidUntil(input) {
+            let value = input.value.replace(/\D/g, "").substring(0, 4); // Оставляем только цифры, максимум 4
+            if (value.length > 2) value = value.substring(0, 2) + "/" + value.substring(2);
+            input.value = value;
+            if (value.length !== 5) return false;
+            const [day, month] = value.split("/").map(Number);
+            return day >= 1 && day <= 31 && month >= 1 && month <= 12;
+         }
+         function validateCVV(input) {
+            input.value = input.value.replace(/\D/g, "").substring(0, 3); // Оставляем только цифры, максимум 3
+            return input.value.length === 3;
+         }
+         function checkFormValidity() {
+            const isValid = validateCardNumber(numberCard) && validateValidUntil(validUntil) && validateCVV(cvv);
+            submitButton.disabled = !isValid;
+         }
+         numberCard.addEventListener("input", () => {
+            validateCardNumber(numberCard);
+            checkFormValidity();
+         });
+         validUntil.addEventListener("input", () => {
+            validateValidUntil(validUntil);
+            checkFormValidity();
+         });
+         cvv.addEventListener("input", () => {
+            validateCVV(cvv);
+            checkFormValidity();
+         });
+         checkFormValidity(); // Проверка при загрузке страницы
+         paymentGoogle.addEventListener("click", () => {
+            if (paymentColumnBlockCard.classList.contains("show")) {
+               paymentColumnBlockCard.classList.remove("show");
+               clearPaymentFields();
+            }
+            submitButton.disabled = false; // Разблокируем кнопку при выборе Google Pay
+         });
+         paymentApple.addEventListener("click", () => {
+            if (paymentColumnBlockCard.classList.contains("show")) {
+               paymentColumnBlockCard.classList.remove("show");
+               clearPaymentFields();
+            }
+            submitButton.disabled = false; // Разблокируем кнопку при выборе Apple Pay
+         });
+         paymentCard.addEventListener("click", () => {
+            paymentColumnBlockCard.classList.add("show");
+            checkFormValidity(); // Проверяем валидацию и при необходимости блокируем кнопку
+         });
+         function clearPaymentFields() {
+            numberCard.value = "";
+            validUntil.value = "";
+            cvv.value = "";
+            checkFormValidity(); // Проверяем, нужно ли заблокировать кнопку
+         }
+      });
+   </script>
+   
 </body>
 </html>

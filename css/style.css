@@ -6108,6 +6108,113 @@ body._touch .header .menu__list > li._active .menu__arrow {
   text-align: center;
 }
 
+.subscriptions__block-wrap-after-payment {
+  margin-bottom: 41px;
+}
+
+.subscriptions__block-after-payment {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 42px 24px;
+  width: 100%;
+}
+
+.subscriptions__block-after-payment:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.subscriptions__block-after-payment h2 {
+  color: #18191F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.subscriptions__block-after-payment h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-top: 14px;
+}
+
+.subscriptions__block-after-payment p {
+  color: #726F6F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.subscriptions__block-after-payment p.price {
+  color: #000;
+  margin-bottom: 9px;
+  margin-top: 2px;
+}
+
+.subscriptions__block-after-payment p.price strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subscriptions__block-after-payment .wrap-card {
+  align-items: center;
+  display: flex;
+  margin-top: 15px;
+}
+
+.subscriptions__block-after-payment .wrap-card .wrap-icon {
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-right: 24px;
+  padding: 10px;
+  height: 45px;
+  flex: 0 0 45px;
+  width: 45px;
+}
+
+.subscriptions__block-after-payment .wrap-card p {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.subscriptions__block-after-payment a {
+  text-decoration: none;
+}
+
+.subscriptions__block-after-payment a.cancel-subscription {
+  color: #F23232;
+  display: table;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.subscriptions__block-after-payment a.update-payment-details {
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 3px;
+  padding: 5px 12px;
+  width: 100%;
+}
+
 .subscriptions__columns {
   margin: 29px auto 0;
   max-width: 540px;
@@ -6731,6 +6838,211 @@ body._touch .header .menu__list > li._active .menu__arrow {
   text-align: center;
   text-decoration: none;
   width: 100%;
+}
+
+.cancel-subscription__block {
+  background-color: #F2F6F5;
+  border-radius: 26px;
+  margin-bottom: 135px;
+  margin-top: 34px;
+  padding: 42px 135px 50px;
+  width: 100%;
+}
+
+.cancel-subscription__block h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 28px;
+}
+
+.cancel-subscription__block p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 !important;
+}
+
+.cancel-subscription__block p strong {
+  font-weight: 700;
+}
+
+.cancel-subscription__block form .wrap-labels {
+  margin-bottom: 25px;
+  margin-top: 14px;
+}
+
+.cancel-subscription__block form label {
+  cursor: pointer;
+  display: table;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.cancel-subscription__block form label input {
+  outline: none;
+}
+
+.cancel-subscription__block form label.label-checkbox {
+  display: table;
+  cursor: pointer;
+  margin-top: 19px;
+  padding-left: 35px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.cancel-subscription__block form label.label-checkbox input {
+  height: 12px;
+  font-size: 14px;
+  left: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  width: 12px;
+}
+
+.cancel-subscription__block form label.label-checkbox input:checked::before {
+  background-color: #000;
+}
+
+.cancel-subscription__block form label.label-checkbox input:checked::after {
+  opacity: 1;
+}
+
+.cancel-subscription__block form label.label-checkbox input::after {
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.5 4.2L5.29535 6.56155C5.70392 6.81578 6.23563 6.74295 6.5608 6.38822L11.5 1' stroke='white' stroke-width='2' stroke-linecap='round'/%3e%3c/svg%3e");
+  left: -2px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: -1px;
+}
+
+.cancel-subscription__block form label.label-checkbox input::before {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  content: "";
+  display: block;
+  height: 19px;
+  left: -5px;
+  pointer-events: none;
+  position: absolute;
+  top: -2px;
+  width: 19px;
+}
+
+.cancel-subscription__block form textarea {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  height: 153px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  outline: none;
+  resize: none;
+  margin-top: 14px;
+  padding: 12px 15px;
+  width: 100%;
+}
+
+.form-wrap-buttons {
+  margin-top: 18px;
+}
+
+.form-wrap-buttons a,
+.form-wrap-buttons input[type=submit],
+.form-wrap-buttons button {
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  padding: 5px 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.form-wrap-buttons a {
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+}
+
+.form-wrap-buttons input[type=submit],
+.form-wrap-buttons button {
+  background-color: #000;
+  color: #fff;
+}
+
+.update-payment-details .payment__block {
+  margin-bottom: 143px;
+  padding: 78px 40px 113px;
+}
+
+.update-payment-details .payment__column {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 452px;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
+
+.update-payment-details .payment__columnBlockCard {
+  display: block;
+}
+
+.update-payment-details .payment__columnBlockCard.show .payment__columnBlockCard-content {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.update-payment-details .payment__columnBlockCard-content {
+  display: none;
+}
+
+.update-payment-details .widget-buttons-wrap-buttons button,
+.update-payment-details .widget-buttons-wrap-buttons input[type=submit] {
+  align-items: center;
+  background-color: #000;
+  border-radius: 20px;
+  color: #fff;
+  display: flex !important;
+  justify-content: center;
+  height: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  height: 50px;
+  padding: 5px 12px;
+  transition: 0.3s ease 0s;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.update-payment-details .widget-buttons-wrap-buttons button:disabled,
+.update-payment-details .widget-buttons-wrap-buttons input[type=submit]:disabled {
+  background-color: #B0B0B0;
+  color: #4B4B4B;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 /* Page - Create add */
@@ -9048,6 +9360,20 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: calc(50% - 20px);
   }
 
+  .form-wrap-buttons {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+  }
+
+  .form-wrap-buttons a,
+  .form-wrap-buttons input[type=submit],
+  .form-wrap-buttons button {
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 251px;
+  }
+
   .page-blog__preview {
     display: flex;
   }
@@ -9076,6 +9402,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .top-products-review-page .top-products__item {
     margin: 8px 12px 12px;
     width: calc(50% - 24px);
+  }
+
+  .subscriptions__block-after-payment a.cancel-subscription {
+    margin-bottom: 8px;
+  }
+
+  .update-payment-details .payment__columnBlockCard {
+    padding: 29px;
   }
 }
 
@@ -9230,6 +9564,20 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .header__blockProfileLinks ul li.create-add {
     display: none;
+  }
+
+  .subscriptions__block-after-payment {
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .subscriptions__block-after-payment .column:nth-child(1) {
+    padding-right: 25px;
+    width: calc(100% - 281px);
+  }
+
+  .subscriptions__block-after-payment .column:nth-child(2) {
+    width: 281px;
   }
 
   .footer__columns {
@@ -10502,6 +10850,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
     color: #4D96FF;
     margin-top: 10px;
   }
+
+  .cancel-subscription__block {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 @media (max-width: 1099.98px) {
@@ -11230,6 +11583,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .payment-successful__button {
     height: 65px;
+  }
+
+  .cancel-subscription__block {
+    margin-bottom: 80px;
+  }
+
+  .update-payment-details .payment__block {
+    margin-bottom: 80px;
   }
 
   .create-add__form-button {
@@ -11989,6 +12350,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .profile__items.there-are-tabs {
     scroll-margin-top: 85px;
+  }
+
+  .subscriptions__block-after-payment a.cancel-subscription {
+    margin: 30px auto 0;
+  }
+
+  .subscriptions__block-after-payment a.update-payment-details {
+    margin-top: 30px;
+  }
+
+  .update-payment-details .payment__block {
+    padding: 20px 20px 50px;
   }
 
   .chat__items {
@@ -13091,6 +13464,49 @@ body._touch .header .menu__list > li._active .menu__arrow {
     line-height: 24px;
   }
 
+  .subscriptions__block-after-payment {
+    padding: 25px 20px 20px;
+  }
+
+  .subscriptions__block-after-payment h2 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .subscriptions__block-after-payment h3 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .subscriptions__block-after-payment p.price {
+    margin-top: 5px;
+  }
+
+  .subscriptions__block-after-payment p.price strong {
+    font-size: 16px;
+  }
+
+  .subscriptions__block-after-payment .wrap-card .wrap-icon {
+    height: 38px;
+    flex: 0 0 38px;
+    margin-right: 15px;
+    padding: 7px;
+    width: 38px;
+  }
+
+  .subscriptions__block-after-payment a.cancel-subscription {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 20px;
+  }
+
+  .subscriptions__block-after-payment a.update-payment-details {
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 20px;
+  }
+
   .subscriptions__column {
     padding: 30px 10px 10px;
   }
@@ -13230,7 +13646,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .payment__columnBlockCard {
-    padding: 15px 15px;
+    padding: 15px;
   }
 
   .payment__columnBlockCard h4 {
@@ -13295,6 +13711,78 @@ body._touch .header .menu__list > li._active .menu__arrow {
     font-size: 15px;
     height: 60px;
     margin-top: 25px;
+  }
+
+  .cancel-subscription__block {
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding: 25px 20px 15px;
+  }
+
+  .cancel-subscription__block h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+
+  .cancel-subscription__block p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .cancel-subscription__block form .wrap-labels {
+    margin-bottom: 14px;
+  }
+
+  .cancel-subscription__block form label {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .cancel-subscription__block form label.label-checkbox {
+    margin-top: 12px;
+    padding-left: 26px;
+  }
+
+  .cancel-subscription__block form label.label-checkbox input {
+    left: 3px;
+  }
+
+  .cancel-subscription__block form label.label-checkbox input::after {
+    content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='6' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.5 4.2L5.29535 6.56155C5.70392 6.81578 6.23563 6.74295 6.5608 6.38822L11.5 1' stroke='white' stroke-width='2' stroke-linecap='round'/%3e%3c/svg%3e");
+    left: 0;
+    top: -13px;
+  }
+
+  .cancel-subscription__block form label.label-checkbox input::before {
+    height: 15px;
+    left: -2px;
+    width: 15px;
+  }
+
+  .cancel-subscription__block form textarea {
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 12px;
+  }
+
+  .form-wrap-buttons {
+    margin-top: 8px;
+  }
+
+  .update-payment-details .payment__block {
+    margin-bottom: 50px;
+    padding: 15px 20px 20px;
+  }
+
+  .update-payment-details .widget-buttons-wrap-buttons button,
+  .update-payment-details .widget-buttons-wrap-buttons input[type=submit] {
+    border-radius: 8px;
+    font-size: 12px;
+    height: 42px;
+    padding-left: 3px;
+    padding-right: 3px;
   }
 
   .create-add {
@@ -14006,6 +14494,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
     min-width: 100%;
   }
 
+  .form-wrap-buttons a,
+  .form-wrap-buttons input[type=submit],
+  .form-wrap-buttons button {
+    font-size: 15px;
+    line-height: 17px;
+    height: 46px;
+  }
+
   .page-not-found__blockText p br {
     display: none;
   }
@@ -14267,6 +14763,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .form-wrap-buttons a {
+    transition: 0.3s ease 0s;
+  }
+
+  .form-wrap-buttons a:hover {
     background-color: #000;
     color: #fff;
   }
