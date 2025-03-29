@@ -6209,6 +6209,530 @@ body._touch .header .menu__list > li._active .menu__arrow {
   width: 100%;
 }
 
+.payment__block {
+  background-color: #F2F6F5;
+  border-radius: 26px;
+  margin-bottom: 171px;
+  margin-top: 36px;
+  padding: 40px 135px;
+  width: 100%;
+}
+
+.payment__blockTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.payment__columns {
+  margin-top: 36px;
+}
+
+.payment__columnTitleAboveWidgets {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 23px;
+  margin-top: 3px;
+  text-align: center;
+}
+
+.payment__columnTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.payment__columnText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 18px 0 14px !important;
+}
+
+.payment__columnRadioButtons label {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #DADEDF;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px 0px rgba(103, 110, 118, 0.08);
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  height: 40px;
+  margin-bottom: 6px;
+  padding-left: 7px;
+  padding-right: 7px;
+  position: relative;
+  min-width: 147px;
+}
+
+.payment__columnRadioButtons label img {
+  margin-right: 5px;
+}
+
+.payment__columnRadioButtons label input[type=radio] {
+  height: 14px;
+  margin-right: 9px;
+  position: relative;
+  width: 14px;
+}
+
+.payment__columnRadioButtons label input[type=radio]:not(.payment__columnRadioButtons label input[type=radio]::before) {
+  opacity: 0;
+}
+
+.payment__columnRadioButtons label input[type=radio]::before {
+  background-color: #fff;
+  border: 1px solid #DADEDF;
+  box-shadow: 0px 2px 5px 0px rgba(103, 110, 118, 0.0784313725);
+  border-radius: 100px;
+  content: "";
+  display: block;
+  height: 16px;
+  left: -1px;
+  opacity: 1;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 16px;
+  z-index: 1;
+}
+
+.payment__columnRadioButtons label input[type=radio]::after {
+  background-color: #fff;
+  border: 1px solid #DADEDF;
+  box-shadow: 0px 2px 5px 0px rgba(103, 110, 118, 0.0784313725);
+  border-radius: 100px;
+  content: "";
+  display: block;
+  height: 6px;
+  left: 50%;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 6px;
+  z-index: 1;
+}
+
+.payment__columnRadioButtons label input[type=radio]:checked::before {
+  background-color: #000;
+  border-color: #000;
+}
+
+.payment__columnRadioButtons label input[type=radio]:checked::after {
+  opacity: 1;
+}
+
+.payment__columnWidget {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 26px;
+  width: 100%;
+}
+
+.payment__columnWidget:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.payment__columnWidget.widget-promo-code {
+  padding: 23px 27px 29px;
+}
+
+.payment__columnWidget.widget-promo-code p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 0 0 -2px;
+}
+
+.payment__columnWidget.widget-promo-code .wrap-field {
+  align-items: center;
+  display: flex;
+  height: 34px;
+}
+
+.payment__columnWidget.widget-promo-code .wrap-field input:not([type=button]),
+.payment__columnWidget.widget-promo-code .wrap-field input[type=button],
+.payment__columnWidget.widget-promo-code .wrap-field button {
+  background-color: #F1F1F1;
+  border: none;
+  border-radius: 5px;
+  height: 100%;
+  outline: none;
+}
+
+.payment__columnWidget.widget-promo-code .wrap-field input:not([type=button]) {
+  font-size: 14px;
+  line-height: 100%;
+  margin-right: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% - 129px - 10px);
+}
+
+.payment__columnWidget.widget-promo-code .wrap-field input[type=button],
+.payment__columnWidget.widget-promo-code .wrap-field button {
+  background-color: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 129px;
+}
+
+.payment__columnWidget.widget-buttons {
+  margin-top: 40px;
+  position: relative;
+  padding: 14px 15px 12px;
+}
+
+.payment__columnWidget.widget-buttons::before {
+  background-color: #000;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  margin: 0 0 20px 0;
+  position: absolute;
+  top: -21px;
+  width: 100%;
+}
+
+.payment__columnWidget.widget-buttons p {
+  margin: 0;
+}
+
+.payment__columnWidget.widget-buttons p.total-to-be-paid {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.payment__columnWidget.widget-buttons p.total-to-be-paid strong {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-left: 8px;
+  text-align: right;
+}
+
+.payment__columnWidget.widget-buttons p.agreement {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.payment__columnWidget.widget-buttons p.agreement a {
+  white-space: nowrap;
+}
+
+.payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons {
+  display: flex;
+  height: 50px;
+  margin: 17px 0 18px;
+}
+
+.payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons a,
+.payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons button,
+.payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons input[type=submit] {
+  align-items: center;
+  border-radius: 15px;
+  color: #000;
+  display: flex !important;
+  justify-content: center;
+  height: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  width: calc(50% - 2.5px);
+}
+
+.payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons a {
+  border: 1px solid #000;
+  display: block;
+  margin-right: 2.5px;
+  transition: 0.3s ease 0s;
+}
+
+.payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons button,
+.payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons input[type=submit] {
+  background-color: #000;
+  color: #fff;
+  margin-left: 2.5px;
+  transition: 0.3s ease 0s;
+}
+
+.payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons button:disabled,
+.payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons input[type=submit]:disabled {
+  background-color: #B0B0B0;
+  color: #4B4B4B;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.payment__columnWidgetTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+
+.payment__columnWidgetPrice {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.payment__columnWidgetPrice strong {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.payment__columnWidgetList {
+  margin: 43px 0 19px;
+}
+
+.payment__columnWidgetList li {
+  color: #656363;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  list-style: none;
+  padding-left: 23px;
+  position: relative;
+}
+
+.payment__columnWidgetList li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.payment__columnWidgetList li::before {
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='17' height='13' viewBox='0 0 17 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.625 6.99609L6 11.3711L16 1.37109' stroke='%2321EA9C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+  left: 0;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.payment__columnWidgetLinkChange {
+  color: #000;
+  display: table;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.payment__columnWidgetLinkRef {
+  color: #887F7F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 0;
+  text-align: center;
+}
+
+.payment__columnBlockCard {
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  max-width: 450px;
+  margin-top: 13px;
+  padding: 16px 31px 35px;
+  width: 100%;
+}
+
+.payment__columnBlockCard.show {
+  display: block;
+}
+
+.payment__columnBlockCard h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0 0 6px;
+}
+
+.payment__columnBlockCard label {
+  display: table;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: -2px;
+}
+
+.payment__columnBlockCard label.label-checkbox {
+  cursor: pointer;
+  margin-top: 7px;
+  padding-left: 26px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.payment__columnBlockCard label.label-checkbox input {
+  height: 12px;
+  font-size: 14px;
+  left: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  width: 12px;
+}
+
+.payment__columnBlockCard label.label-checkbox input:checked::before {
+  background-color: #000;
+}
+
+.payment__columnBlockCard label.label-checkbox input::after {
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.5 4.2L5.29535 6.56155C5.70392 6.81578 6.23563 6.74295 6.5608 6.38822L11.5 1' stroke='white' stroke-width='2' stroke-linecap='round'/%3e%3c/svg%3e");
+  left: -2px;
+  pointer-events: none;
+  position: absolute;
+  top: -10px;
+}
+
+.payment__columnBlockCard label.label-checkbox input::before {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  content: "";
+  display: block;
+  height: 19px;
+  left: -5px;
+  pointer-events: none;
+  position: absolute;
+  top: -2px;
+  width: 19px;
+}
+
+.payment__columnBlockCard input {
+  background-color: #F1F1F1;
+  border-radius: 5px;
+  border: none;
+  height: 34px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 34px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 7px;
+  outline: none;
+  width: 100%;
+}
+
+.payment__columnBlockCard .wrap-two-fields {
+  display: flex;
+}
+
+.payment__columnBlockCard .wrap-two-fields .wrap-two-field {
+  width: 50%;
+}
+
+.payment__columnBlockCard .wrap-two-fields .wrap-two-field:nth-child(1) {
+  padding-right: 16px;
+}
+
+.payment__columnBlockCard .wrap-two-fields .wrap-two-field:nth-child(2) {
+  padding-left: 16px;
+}
+
+.payment-successful {
+  margin: 198px auto 225px;
+  max-width: 640px;
+}
+
+.payment-successful__wrapIcon {
+  max-height: 284px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 308px;
+}
+
+.payment-successful__wrapIcon img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.payment-successful__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 140%;
+  margin: 19px 0 0;
+  text-align: center;
+}
+
+.payment-successful__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.payment-successful__button {
+  align-items: center;
+  background-color: #050505;
+  color: #fff;
+  border-radius: 100px;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 30px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
 /* Page - Create add */
 
 .create-add {
@@ -9048,6 +9572,31 @@ body._touch .header .menu__list > li._active .menu__arrow {
     height: calc(100% - 76px - 15px);
   }
 
+  .payment__columns {
+    display: flex;
+  }
+
+  .payment__column:nth-child(1) {
+    padding-right: 65px;
+    width: calc(100% - 381px);
+  }
+
+  .payment__column:nth-child(2) {
+    position: relative;
+    width: 381px;
+  }
+
+  .payment__column:nth-child(2)::after {
+    background-color: #D0D0D0;
+    content: "";
+    display: block;
+    height: 75%;
+    left: -49px;
+    position: absolute;
+    top: 0;
+    width: 1px;
+  }
+
   .mobile-application__columns {
     display: flex;
     flex-wrap: wrap;
@@ -9611,6 +10160,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 1280px) {
+  .payment__block {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .about__itemBlockText:not(:last-child) {
     margin-bottom: 40px;
   }
@@ -10664,6 +11218,20 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: 250px;
   }
 
+  .payment__block {
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .payment-successful {
+    margin: 150px auto 100px;
+  }
+
+  .payment-successful__button {
+    height: 65px;
+  }
+
   .create-add__form-button {
     height: 66px;
   }
@@ -10810,6 +11378,28 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .form-help__submit {
     height: 60px;
     width: 220px;
+  }
+
+  .payment__blockTitle {
+    text-align: center;
+  }
+
+  .payment__column:nth-child(1) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 452px;
+  }
+
+  .payment__column:nth-child(2) {
+    padding-top: 35px;
+  }
+
+  .payment__columnWidgetPrice {
+    margin-top: 20px;
+  }
+
+  .payment__columnWidgetList {
+    margin-top: 20px;
   }
 
   .mobile-application__column {
@@ -12526,6 +13116,187 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-top: 5px;
   }
 
+  .payment__block {
+    margin-top: 20px;
+    padding: 40px 26px 26px;
+  }
+
+  .payment__blockTitle {
+    font-size: 24px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .payment__columns {
+    margin-top: 20px;
+  }
+
+  .payment__columnTitleAboveWidgets {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 0 15px;
+  }
+
+  .payment__columnTitle {
+    font-size: 21px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .payment__columnText {
+    font-size: 15px;
+    line-height: 21px;
+    margin: 10px 0 15px !important;
+    text-align: center;
+  }
+
+  .payment__columnWidget {
+    padding: 20px 15px;
+  }
+
+  .payment__columnWidget.widget-promo-code {
+    padding: 10px 15px;
+  }
+
+  .payment__columnWidget.widget-promo-code .wrap-field input:not([type=button]) {
+    margin-right: 5px;
+    width: calc(100% - 110px - 5px);
+  }
+
+  .payment__columnWidget.widget-promo-code .wrap-field input[type=button],
+  .payment__columnWidget.widget-promo-code .wrap-field button {
+    font-size: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 110px;
+  }
+
+  .payment__columnWidget.widget-buttons p.total-to-be-paid strong {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .payment__columnWidget.widget-buttons p.agreement {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons {
+    margin: 12px 0 8px;
+  }
+
+  .payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons a,
+  .payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons button,
+  .payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons input[type=submit] {
+    border-radius: 8px;
+    font-size: 12px;
+    height: 42px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .payment__columnWidgetTitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .payment__columnWidgetPrice {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 0 !important;
+    margin-top: 12px;
+  }
+
+  .payment__columnWidgetPrice strong {
+    font-size: 16px;
+  }
+
+  .payment__columnWidgetList {
+    margin-top: 10px;
+  }
+
+  .payment__columnWidgetList li {
+    font-size: 14px;
+  }
+
+  .payment__columnWidgetLinkChange {
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  .payment__columnWidgetLinkRef {
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  .payment__columnBlockCard {
+    padding: 15px 15px;
+  }
+
+  .payment__columnBlockCard h4 {
+    line-height: 16px;
+    margin-bottom: 9px;
+  }
+
+  .payment__columnBlockCard label {
+    line-height: 13px;
+    margin-bottom: 3px;
+    margin-top: 5px;
+  }
+
+  .payment__columnBlockCard label.label-checkbox {
+    margin-top: 6px;
+    padding-left: 22px;
+  }
+
+  .payment__columnBlockCard label.label-checkbox input {
+    left: 3px;
+  }
+
+  .payment__columnBlockCard label.label-checkbox input::after {
+    content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='6' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.5 4.2L5.29535 6.56155C5.70392 6.81578 6.23563 6.74295 6.5608 6.38822L11.5 1' stroke='white' stroke-width='2' stroke-linecap='round'/%3e%3c/svg%3e");
+    left: 0;
+    top: -13px;
+  }
+
+  .payment__columnBlockCard label.label-checkbox input::before {
+    height: 15px;
+    left: -2px;
+    width: 15px;
+  }
+
+  .payment__columnBlockCard .wrap-two-fields .wrap-two-field:nth-child(1) {
+    padding-right: 5px;
+  }
+
+  .payment__columnBlockCard .wrap-two-fields .wrap-two-field:nth-child(2) {
+    padding-left: 5px;
+  }
+
+  .payment-successful {
+    margin: 120px auto 50px;
+    max-width: 94%;
+  }
+
+  .payment-successful__wrapIcon {
+    max-width: 61%;
+  }
+
+  .payment-successful__title {
+    font-size: 22px;
+  }
+
+  .payment-successful__text {
+    font-size: 15px;
+  }
+
+  .payment-successful__button {
+    border-radius: 16px;
+    font-size: 15px;
+    height: 60px;
+    margin-top: 25px;
+  }
+
   .create-add {
     padding-bottom: 50px;
   }
@@ -13231,6 +14002,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-left: 0;
   }
 
+  .payment__columnRadioButtons label {
+    min-width: 100%;
+  }
+
   .page-not-found__blockText p br {
     display: none;
   }
@@ -13489,6 +14264,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .header__accountLinks a:hover {
     color: #0064D9;
+  }
+
+  .payment__columnWidget.widget-buttons .widget-buttons-wrap-buttons a:hover {
+    background-color: #000;
+    color: #fff;
   }
 
   .chat__user:hover .chat__user-wrap-content {
