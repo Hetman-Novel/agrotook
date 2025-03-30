@@ -13,7 +13,7 @@
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20250331001737">
    <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20250331001737">
    <link rel="stylesheet" href="files/custom-select/style.css?_v=20250331001737">
-   <title>Create Add 2 - Аgro Took</title>
+   <title>Создать объявление - Аgro Took</title>
 </head>
 
 <body>
@@ -200,7 +200,7 @@
 		<main class="main create-add">
          <div class="n_container">
 				<div class="page__head there-is-a-button">
-					<h1>Create Add 2</h1>
+					<h1>Создать объявление</h1>
                <button id="show-sidebar" type="button" class="favorite__btn-show-filter">
                   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                      <path d="m487.976 0h-463.948c-21.318 0-32.075 25.866-16.97 40.971l184.942 184.97v206.059c0 7.831 3.821 15.17 10.237 19.662l80 55.98c15.783 11.048 37.763-.149 37.763-19.662v-262.039l184.947-184.97c15.074-15.075 4.391-40.971-16.971-40.971z"/>
@@ -215,11 +215,11 @@
                      <aside id="sidebar-sort-by" class="sidebar-filters">
                         
                         <div class="block-sort-by">
-                           <input id="create-add-title" type="text" placeholder="Title*" class="create-add__field">
+                           <input id="create-add-title" type="text" placeholder="Заголовок*" class="create-add__field">
                            <div class="wrap-select-form">
                               <input id="create-add-categories" type="hidden" name="create-add-select-categories">
                               <select id="sidebar-filters-categories">
-                                 <option selected disabled>Category*</option>
+                                 <option selected disabled>Категория*</option>
                                  <option value="Crops">Crops</option>
                                  <option value="Processing">Processing</option>
                                  <option value="Grains">Grains</option>
@@ -250,7 +250,7 @@
                            <div class="wrap-select-form">
                               <input id="create-add-address" type="hidden" name="create-add-select-address">
                               <select id="sidebar-filters-address">
-                                 <option selected disabled>Adress*</option>
+                                 <option selected disabled>Адрес*</option>
                                  <option value="Address 1">Address 1</option>
                                  <option value="Address 2">Address 2</option>
                                  <option value="Address 3">Address 3</option>
@@ -258,18 +258,18 @@
                                  <option value="Address 5">Address 5</option>
                               </select>
                            </div>
-                           <textarea id="create-add-description" name="create-add-description" placeholder="Description*" class="create-add__field description"></textarea>
+                           <textarea id="create-add-description" name="create-add-description" placeholder="Описание*" class="create-add__field description"></textarea>
                         
                            <div class="sidebar-filters-block">
-                              <label>Price</label>
-                              <div class="sidebar-filters-wrap-radio-btns auto">
-                                 <div class="sidebar-filters-btn">
+                              <label>Цена</label>
+                              <div class="sidebar-filters-wrap-radio-btns auto flex-wrap-wrap">
+                                 <div class="sidebar-filters-btn width-100">
                                     <input type="radio" name="negotiable-price" value="$">
-                                    <span class="sidebar-filters-btn-checked">Negotiable price</span>
+                                    <span class="sidebar-filters-btn-checked">Цена по договоренности</span>
                                  </div>
-                                 <div class="sidebar-filters-btn">
+                                 <div class="sidebar-filters-btn width-100">
                                     <input type="radio" name="negotiable-price" value="Price">
-                                    <span class="sidebar-filters-btn-checked">Price</span>
+                                    <span class="sidebar-filters-btn-checked">Цена</span>
                                  </div>
                               </div>
                               <input id="create-add-price" type="number" placeholder="0">
@@ -289,19 +289,61 @@
                               </div>
                            </div>
                            <div class="sidebar-filters-block">
-                              <label>Unit</label>
-                              <div class="sidebar-filters-wrap-radio-btns">
+                              <label>Состояние</label>
+                              <div class="sidebar-filters-wrap-radio-btns auto">
                                  <div class="sidebar-filters-btn">
-                                    <input type="radio" name="unit" value="kg">
-                                    <span class="sidebar-filters-btn-checked">kg</span>
+                                    <input type="radio" name="state" value="Б/У">
+                                    <span class="sidebar-filters-btn-checked">Б/У</span>
                                  </div>
                                  <div class="sidebar-filters-btn">
-                                    <input type="radio" name="unit" value="t">
-                                    <span class="sidebar-filters-btn-checked">t</span>
+                                    <input type="radio" name="state" value="Новый">
+                                    <span class="sidebar-filters-btn-checked">Новый</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="sidebar-filters-block">
+                              <label>Доставка</label>
+                              <div class="sidebar-filters-wrap-radio-btns auto">
+                                 <div class="sidebar-filters-btn">
+                                    <input type="radio" name="delivery" value="Доставка">
+                                    <span class="sidebar-filters-btn-checked">Доставка</span>
                                  </div>
                                  <div class="sidebar-filters-btn">
-                                    <input type="radio" name="unit" value="l">
-                                    <span class="sidebar-filters-btn-checked">l</span>
+                                    <input type="radio" name="delivery" value="Самовывоз">
+                                    <span class="sidebar-filters-btn-checked">Самовывоз</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="sidebar-filters-block">
+                              <label>Единица</label>
+                              <div class="sidebar-filters-wrap-radio-btns flex-wrap-wrap">
+                                 <div class="sidebar-filters-btn width-auto">
+                                    <input type="radio" name="unit" value="миллилитр">
+                                    <span class="sidebar-filters-btn-checked">миллилитр</span>
+                                 </div>
+                                 <div class="sidebar-filters-btn width-auto">
+                                    <input type="radio" name="unit" value="грамм">
+                                    <span class="sidebar-filters-btn-checked">грамм</span>
+                                 </div>
+                                 <div class="sidebar-filters-btn width-auto">
+                                    <input type="radio" name="unit" value="кг">
+                                    <span class="sidebar-filters-btn-checked">кг</span>
+                                 </div>
+                                 <div class="sidebar-filters-btn width-auto">
+                                    <input type="radio" name="unit" value="тонн">
+                                    <span class="sidebar-filters-btn-checked">тонн</span>
+                                 </div>
+                                 <div class="sidebar-filters-btn width-auto">
+                                    <input type="radio" name="unit" value="литр">
+                                    <span class="sidebar-filters-btn-checked">литр</span>
+                                 </div>
+                                 <div class="sidebar-filters-btn width-auto">
+                                    <input type="radio" name="unit" value="кубический метр">
+                                    <span class="sidebar-filters-btn-checked">кубический метр</span>
+                                 </div>
+                                 <div class="sidebar-filters-btn width-auto">
+                                    <input type="radio" name="unit" value="единица товара">
+                                    <span class="sidebar-filters-btn-checked">единица товара</span>
                                  </div>
                               </div>
                            </div>
@@ -312,8 +354,13 @@
                   </div>
                   <div class="create-add__item">
                      <div class="create-add__content">
-                        <h2>Place an ad for your product here!</h2>
-                        <p>Are you looking for customers? Then you're in the right place! Tell us about your product, service, or promotion and attract customers quickly and easily.<br> Make your product stand out today!</p>
+                        <h2>Разместите объявление о своем продукте здесь!</h2>
+                        <div class="create-add__notifi-block exhausted">
+                           <h3>Ваш лимит бесплатных объявлений исчерпан</h3>
+                           <p>Хотите продолжать размещать объявления? Оформите подписку и получите больше возможностей!</p>
+                           <a href="subscription-buy-ad-placement-subscriptions.html" class="button">Выбрать подписку</a>
+                        </div>
+                        <p>Вы ищете клиентов? Тогда вы попали по адресу! Расскажите нам о своем продукте, услуге или акции и привлекайте клиентов быстро и легко.<br> Сделайте свой продукт привлекательным уже сегодня!</p>
                         
                         <div id="create-add-wrap-photo" class="create-add__wrapPhoto "><!-- photo-selected -->
                            <!--<img src="images/preview-photo.jpg" alt="">-->
@@ -404,7 +451,7 @@
                            </div>
                         </div>
                         <div class="create-add__form-buttons">
-                           <a href="/agrotook/preview.html" class="create-add__form-button preview disabled" target="_blank">Preview</a>
+                           <!--<a href="/agrotook/preview.html" class="create-add__form-button preview disabled" target="_blank">Preview</a>-->
                            <button type="submit" class="create-add__form-button submit" disabled>Publish</button>
                         </div>
 

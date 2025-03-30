@@ -205,15 +205,100 @@
             <div class="profile__items">
                <div class="profile__item">
                   <div id="profile-buttons" class="profile__subButtons">
-                     <button data-subtab="for-sellers" type="button" class="profile__subButton">Для продавцов</button>
-                     <button data-subtab="for-buyers" type="button" class="profile__subButton active">Для покупателей</button>
+                     <button data-subtab="for-sellers" type="button" class="profile__subButton active">Для продавцов</button>
+                     <button data-subtab="for-buyers" type="button" class="profile__subButton">Для покупателей</button>
                   </div>
-                  <div data-subcontent="for-sellers" class="profile__subTabContent">
+                  <div data-subcontent="for-sellers" class="profile__subTabContent show-content">
                      
-                     Для продавцов
+                     <div class="subscriptions__block">
+                        <h2 class="subscriptions__blockTitle">Тарифы и опции</h2>
+                        <p class="subscriptions__blockText">Выберите план, который лучше всего соответствует вашим потребностям. Определите, сколько объявлений вам нужно. Завершите покупку и начните пользоваться преимуществами уже сейчас!</p>
+                        <h3 class="subscriptions__blockSubtitle">Выберите тип подписки</h3>
+                        <div class="subscriptions__columns three-columns">
+                           <div class="subscriptions__column column-info">
+                              <div class="subscriptions__columnInfo">
+                                 <p>Лучше всего подходит для нерегулярных пользователей</p>
+                              </div>
+                           </div>
+                           <div class="subscriptions__column column-info">
+                              <div class="subscriptions__columnInfo">
+                                 <p>Лучший вариант для активных продавцов</p>
+                              </div>
+                           </div>
+                           <div class="subscriptions__column">
+                              <div class="wrap-select"></div>
+                              <h4 class="subscriptions__columnTitle">Одноразовое размещение</h4>
+                              <p class="subscriptions__columnPrice"><span>5 EUR</span></p>
+                              <ul class="subscriptions__columnList">
+                                 <li>Дополнительные<br> объявления - <strong>5€ за каждое</strong></li>
+                              </ul>
+                              <div class="subscriptions__columnWrapButton">
+                                 <a href="buy-subscription-for-buyers-payment.html" class="subscriptions__columnButton">Купить</a>
+                              </div>
+                           </div>
+                           <div class="subscriptions__column">
+                              <div class="wrap-select">
+                                 <div class="select">
+                                    <div class="select__header">
+                                       <span class="select__current">6 Месяцев</span>
+                                       <div class="select__icon">
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M5 8L9.3753 11.5002C9.74052 11.7924 10.2595 11.7924 10.6247 11.5002L15 8" stroke="#3F3D3D" stroke-linecap="round"/>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                    <div class="select__body">
+                                       <div class="select__item">8 Месяцев</div>
+                                       <div class="select__item">10 Месяцев</div>
+                                       <div class="select__item">12 Месяцев</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <h4 class="subscriptions__columnTitle">PRO</h4>
+                              <p class="subscriptions__columnPrice"><span>50 EUR</span></p>
+                              <ul class="subscriptions__columnList">
+                                 <li>Включает <strong>10 объявлений</strong> в месяц (фиксированное количество)</li>
+                                 <li>Пакет действителен в течение <strong>6 месяцев</strong></li>
+                                 <li><strong>Неограниченный просмотр контактов</strong> в течение 6 месяцев</li>
+                              </ul>
+                              <div class="subscriptions__columnWrapButton">
+                                 <a href="buy-subscription-for-buyers-payment.html" class="subscriptions__columnButton">Купить PRO</a>
+                              </div>
+                           </div>
+                           <div class="subscriptions__column">
+                              <div class="wrap-select">
+                                 <div class="select">
+                                    <div class="select__header">
+                                       <span class="select__current">6 Месяцев</span>
+                                       <div class="select__icon">
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M5 8L9.3753 11.5002C9.74052 11.7924 10.2595 11.7924 10.6247 11.5002L15 8" stroke="#3F3D3D" stroke-linecap="round"/>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                    <div class="select__body">
+                                       <div class="select__item">8 Месяцев</div>
+                                       <div class="select__item">10 Месяцев</div>
+                                       <div class="select__item">12 Месяцев</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <h4 class="subscriptions__columnTitle">PRO MAX</h4>
+                              <p class="subscriptions__columnPrice"><span>80 EUR</span></p>
+                              <ul class="subscriptions__columnList">
+                                 <li>Включает <strong>30 объявлений</strong> в месяц (фиксированное количество)</li>
+                                 <li>Пакет действителен в течение <strong>6 месяцев</strong></li>
+                                 <li><strong>Неограниченный просмотр контактов</strong> в течение 6 месяцев</li>
+                              </ul>
+                              <div class="subscriptions__columnWrapButton">
+                                 <a href="buy-subscription-for-buyers-payment.html" class="subscriptions__columnButton">Купить PRO MAX</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
 
                   </div>
-                  <div data-subcontent="for-buyers" class="profile__subTabContent show-content">
+                  <div data-subcontent="for-buyers" class="profile__subTabContent">
                      
                      <div class="subscriptions__block">
                         <!--<div class="subscriptions__block-wrap-after-payment">
@@ -270,6 +355,7 @@
                            </div>
                         </div>
                      </div>
+
                   </div>
                </div>
                <div class="profile__item">
@@ -381,6 +467,8 @@
    <script src="js/script.min.js?_v=20250331001737"></script>
 
    <script src="files/js/profile.js?_v=20250331001737"></script>
+
+   <script src="files/custom-select/script.js?_v=20250331001737"></script>
 
    <script>
       const cardElement = document.getElementById("card-number");
