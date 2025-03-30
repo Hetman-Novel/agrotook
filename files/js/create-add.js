@@ -159,10 +159,14 @@ document.addEventListener('DOMContentLoaded', function () {
       // Remove or add disabled depending on validation status
       if (isValid) {
          submitButton.disabled = false;
-         previewButton.classList.remove('disabled');
+         if (previewButton) {
+            previewButton.classList.remove('disabled');
+         }
       } else {
          submitButton.disabled = true;
-         previewButton.classList.add('disabled');
+         if (previewButton) {
+            previewButton.classList.add('disabled');
+         }
       }
    }
 
