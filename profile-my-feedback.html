@@ -13,13 +13,13 @@
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20250401022218">
    <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20250401022218">
    <link rel="stylesheet" href="files/custom-select/style.css?_v=20250401022218">
-   <title>Tariffs - Аgro Took</title>
+   <title>My feedback - Аgro Took</title>
 </head>
 
 <body>
 	<div class="wrapper">
 		
-		<header class="header bg-color">
+		<header class="header lock-padding bg-color">
 			<div class="n_container">
 				<div class="header__left">
 					<a href="/agrotook/">
@@ -197,38 +197,46 @@
 				</div>
 			</div>
 		</header>
-		<main class="main">
+		<main class="main profile my-feedback">
          <div class="n_container">
 				<div class="page__head">
-					<h1>Tariffs</h1>
+					<h1>My feedback</h1>
 				</div>
-            <div class="advertisement__block first-block-text text-center">
-               <h3>Tariffs for placing advertisements</h3>
-               <p>We offer transparent and affordable conditions for publishing ads. Check out our tariff plan and start earning money or finding the services you need today!</p>
-            </div>
-            <div class="advertisement__items with-image">
-               <div class="advertisement__item">
-                  <img src="images/advertisement-image.jpg" alt="">
-               </div>
-               <div class="advertisement__item">
-                  <div class="advertisement__item-block">
-                     <h2>FREE PLACEMENT</h2>
-                     <p><strong>Each user gets the opportunity to place 2 ads for free.</strong><br> <strong>What does this mean?</strong><br> You can test our service and publish two ads at no cost. This is a great opportunity for new users or those who want to quickly find a buyer or client.<br> <strong>How to use it:</strong><br> Log in to your account.<br> Click on the “Create Add” button.<br> Fill in the required information.<br> <strong>Your first two ads will be published for free!</strong></p>
+            <div class="profile__items">
+               <div class="profile__item">
+
+                  <div class="no-reviews-yet__block">
+                     <div class="no-reviews-yet__blockIcon">
+                        <img src="images/no-reviews-yet-icon.png" alt="">
+                     </div>
+                     <h2>There are no reviews yet, but that can be fixed!</h2>
+                     <p>Added testimonials will add credibility to your profile and help you attract more customers. Start collecting them today!</p>
                   </div>
-                  <div class="advertisement__item-block">
-                     <h2>ADDITIONAL ADVERTISING</h2>
-                     <p><strong>After using up the free slots, each subsequent ad will cost only €1.</strong><br> <strong>Advantages of paid placement:</strong><br> Affordable price - only €1, regardless of the ad category.<br> Fast placement - your ads will appear on the platform immediately after payment.<br> No limits - place an unlimited number of ads.<br> <strong>How to pay for additional ads:</strong><br> Add ads in the same way as free ads.<br> At the stage of publication, choose a payment method.<br> After payment, the ad will become active.</p>
+                  
+               </div>
+               <div class="profile__item">
+                  <div class="profile__itemBlock list-buttons">
+                     <div class="profile__tabButtons">
+                        <a href="/agrotook/profile.html" class="profile__tabButton">Мои данные</a>
+                        <a href="/agrotook/profile-my-ads.html" class="profile__tabButton">Мои объявления</a>
+                        <a href="/agrotook/profile-my-reviews.html" class="profile__tabButton active">Мои отзывы</a>
+                        <a href="/agrotook/buy-subscription-for-buyers-subscriptions.html" class="profile__tabButton">Подписки</a>
+                        <a href="/agrotook/profile-top-placement.html" class="profile__tabButton">ТОП-размещение</a>
+                        <a href="/agrotook/profile-referral-program.html" class="profile__tabButton">Реферальная программа</a>
+                        <a href="/agrotook/profile-my-qr-code.html" class="profile__tabButton">Мой QR-код</a>
+                        <a href="/agrotook/profile-help.html" class="profile__tabButton">Помощь</a>
+                        <a href="/agrotook/profile-terms-of-use.html" class="profile__tabButton">Условия использования</a>
+                        <a href="/agrotook/profile-privacy-policy.html" class="profile__tabButton">Политика</a>
+                        <a href="/agrotook/profile-about-agro-took.html" class="profile__tabButton">О компании Agro Took</a>
+                        <a href="#delete-accaunt" class="profile__tabButton popup-link">Удалить аккаунт</a>
+                        <a href="#log-out" class="profile__tabButton popup-link">Выйти из системы</a>
+                     </div>
                   </div>
                </div>
-            </div>
-            <div class="advertisement__block">
-               <h2>IMPORTANT INFORMATION</h2>
-               <p><strong>Ad validity period:</strong><br> Each ad remains active for the standard publishing period, which you can extend as needed.<br> <strong>Editing ads:</strong><br> You can edit information in already published ads. Changes will take effect after moderation.<br> <strong>Refund policy:</strong><br> In case of deletion of an ad due to violation of the rules, the payment for placement is not refundable.</p>
-               <p>Post ads easily, quickly and profitably! Start with free postings and discover the benefits of paid placement for better results.</p>
             </div>
          </div>
       </main>
-		<footer class="footer">
+      <footer class="footer">
     <div class="n_container">
         <div class="footer__columns">
             <div class="footer__column footer-first-column">
@@ -279,9 +287,40 @@
         </div>
     </div>
 </footer>
-	</div>
-	
+
+      <div id="delete-accaunt" class="popup">
+         <div class="popup__body">
+            <div class="popup__content">
+               <!--<a href="" class="popup__close close-popup">X</a>-->
+         
+               <h2>Delete accaunt</h2>
+               <p>Are you sure you want to delete<br> this accaunt?</p>
+               <div class="popup__wrap-bottoms">
+                  <a href="/agrotook/" class="popup__close">Delete</a>
+                  <a href="" class="popup__close close-popup">Cancel</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="log-out" class="popup">
+         <div class="popup__body">
+            <div class="popup__content">
+               <!--<a href="" class="popup__close close-popup">X</a>-->
+         
+               <h2>Log out </h2>
+               <p>Are you sure you want to log out?</p>
+               <div class="popup__wrap-bottoms">
+                  <a href="/agrotook/log-in.html" class="popup__close">Log out</a>
+                  <a href="" class="popup__close close-popup">Cancel</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   
    <script src="js/script.min.js?_v=20250401022218"></script>
-	
+
 </body>
 </html>
