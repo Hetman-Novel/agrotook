@@ -14,13 +14,13 @@
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20250401215144">
    <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20250401215144">
    <link rel="stylesheet" href="files/custom-select/style.css?_v=20250401215144">
-   <title>Оплата - Аgro Took</title>
+   <title>Notifications - Аgro Took</title>
 </head>
 
 <body>
 	<div class="wrapper">
 		
-		<header class="header lock-padding bg-color">
+		<header class="header bg-color">
 			<div class="n_container">
 				<div class="header__left">
 					<a href="/agrotook/">
@@ -66,7 +66,7 @@
 						</div>
 					</div>
 					<a href="/agrotook/favorite.html" class="header__icon-favorites">
-						<img src="images/favorite-active.png" alt="">
+						<img src="images/favorite.png" alt="">
 					</a>
 					<a href="#" class="header__icon-message">
 						<img src="images/svg/message.svg" alt="">
@@ -198,84 +198,84 @@
 				</div>
 			</div>
 		</header>
-		<main class="main">
+		<main class="main notifications">
          <div class="n_container">
 				<div class="page__head">
-					<h1>Оплата</h1>
+					<h1>Notifications</h1>
 				</div>
-            
-            <div class="payment__block js-wrap-payment-form">
-               <h2 class="payment__blockTitle">Купить Базовый</h2>
-               <form>
-                  <div class="payment__columns">
-                     <div class="payment__column">
-                        <h3 class="payment__columnTitle">Как вы хотите оплатить?</h3>
-                        <p class="payment__columnText">Выберите удобный для вас способ оплаты</p>
-                        <div class="payment__columnRadioButtons">
-                           <label id="payment-card">
-                              <input type="radio" name="payment-checked">
-                              <img src="images/svg/payment-card-icon.svg" alt="">Карта
-                           </label>
-                           <label id="payment-google">
-                              <input type="radio" name="payment-checked">
-                              <img src="images/svg/payment-google-icon.svg" alt="">Оплатить
-                           </label>
-                           <label id="payment-apple">
-                              <input type="radio" name="payment-checked">
-                              <img src="images/svg/payment-apple-pay-icon.svg" alt="">Apple Pay
-                           </label>
-                        </div>
-                        <div class="payment__columnBlockCard">
-                           <h4>Предоставьте платежную информацию</h4>
-                           <label for="number-card">Номер платежной карты</label>
-                           <input type="text" id="number-card">
-                           <div class="wrap-two-fields">
-                              <div class="wrap-two-field">
-                                 <label for="valid-until">Действителена до</label>
-                                 <input type="text" id="valid-until">
-                              </div>
-                              <div class="wrap-two-field">
-                                 <label for="cvv">СVV</label>
-                                 <input type="text" id="cvv">
-                              </div>
-                           </div>
-                           <label class="label-checkbox"><input type="checkbox"> Сохраните данные для следующего платежа</label>
-                        </div>
-                     </div>
-                     <div class="payment__column">
-                        <h4 class="payment__columnTitleAboveWidgets">Вы выбрали</h4>
-                        <div class="payment__columnWidget widget-price">
-                           <h3 class="payment__columnWidgetTitle"><small style="font-size: 22px;">Одноразовое размещение</small></h3>
-                           <p class="payment__columnWidgetPrice"><strong>5 EUR</strong></p>
-                           <ul class="payment__columnWidgetList">
-                              <li>Дополнительные объявления<br> <strong style="color:#000;">— 5€ за каждое</strong></li>
-                           </ul>
-                           <a href="subscription-buy-ad-placement-subscriptions.html" class="payment__columnWidgetLinkChange">Изменить выбор</a>
-                        </div>
-                        <div class="payment__columnWidget widget-promo-code invalid-promo-code"><!-- invalid-promo-code -->
-                           <p>Добавить промокод</p>
-                           <div class="wrap-field">
-                              <input type="text" value="АGRO TOOK">
-                              <button type="button">Применить</button>
-                           </div>
-                           <p class="invalid-promo-code">Проверьте правильность промокода и попробуйте еще раз</p>
-                        </div>
-                        <div class="payment__columnWidget widget-buttons">
-                           <p class="total-to-be-paid">Итого к оплате: <strong>5 EUR</strong></p>
-                           <div class="widget-buttons-wrap-buttons">
-                              <a href="#">Отмена</a>
-                              <button type="submit" disabled>Оплатить</button>
-                           </div>
-                           <p class="agreement">Нажимая «Оплатить», вы соглашаетесь с нашими <a href="profile-privacy-policy.html">Условиями использования</a></p>
-                        </div>
-                     </div>
-                  </div>
-               </form>
+
+            <div class="notifications__custom-alert"><!-- show -->
+               <p>agrotook.com requests authorization for:</p>
+               <p><img src="images/svg/bell-icon.svg" alt=""> <span>Displaying notifications</span></p>
+               <div class="notifications__custom-alertButtons">
+                  <a href="#">Block</a>
+                  <a href="#">Allow</a>
+               </div>
+               <button type="button" class="notifications__custom-alertClose"><img src="images/svg/close-custom-alert-icon.svg" alt=""></button>
             </div>
+
+            <div class="notifications__block-center">
+               <div class="wrap-icon">
+                  <img src="images/svg/notifications-block-center-icon.svg" alt="">
+               </div>
+               <h2>Stay up to date with all the important events on the platform!</h2>
+               <p>Tip: Enable browser notifications to stay informed in real time!</p>
+            </div>
+
+            <!--<div class="notifications__blocks">
+               <div class="notifications__block">
+                  <div class="wrap-icon">
+                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
+                  </div>
+                  <div class="notifications__blockInfo">
+                     <h2>Your ad has been verified!</h2>
+                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
+                  </div>
+                  <button type="button" class="notifications__blockRemove">
+                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
+                  </button>
+               </div>
+               <div class="notifications__block">
+                  <div class="wrap-icon">
+                     <img src="images/svg/notifications-block-icon-2.svg" alt="">
+                  </div>
+                  <div class="notifications__blockInfo">
+                     <h2>Your ad has not been verified</h2>
+                     <p>Please double-check the information in the ad. Make the necessary corrections and resubmit the ad for verification. If you have any questions, please contact our support.</p>
+                  </div>
+                  <button type="button" class="notifications__blockRemove">
+                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
+                  </button>
+               </div>
+               <div class="notifications__block">
+                  <div class="wrap-icon">
+                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
+                  </div>
+                  <div class="notifications__blockInfo">
+                     <h2>Your ad has been verified!</h2>
+                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
+                  </div>
+                  <button type="button" class="notifications__blockRemove">
+                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
+                  </button>
+               </div>
+               <div class="notifications__block">
+                  <div class="wrap-icon">
+                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
+                  </div>
+                  <div class="notifications__blockInfo">
+                     <h2>Your ad has been verified!</h2>
+                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
+                  </div>
+                  <button type="button" class="notifications__blockRemove">
+                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
+                  </button>
+               </div>
+            </div>-->
 
          </div>
       </main>
-      <footer class="footer">
+		<footer class="footer">
     <div class="n_container">
         <div class="footer__columns">
             <div class="footer__column footer-first-column">
@@ -326,83 +326,11 @@
         </div>
     </div>
 </footer>
-   </div>
-   
+	</div>
+	
    <script src="js/script.min.js?_v=20250401215144"></script>
-   <script>
-      document.addEventListener("DOMContentLoaded", function () {
-         let wrapPaymentForm = document.querySelector('.js-wrap-payment-form');
-         if (!wrapPaymentForm) return;
+	
+   <script src="files/js/notifications.js?_v=20250401215144"></script>
 
-         let paymentCard = document.getElementById('payment-card');
-         let paymentGoogle = document.getElementById('payment-google');
-         let paymentApple = document.getElementById('payment-apple');
-         let paymentColumnBlockCard = document.querySelector('.payment__columnBlockCard');
-
-         const numberCard = wrapPaymentForm.querySelector("#number-card");
-         const validUntil = wrapPaymentForm.querySelector("#valid-until");
-         const cvv = wrapPaymentForm.querySelector("#cvv");
-         const submitButton = wrapPaymentForm.querySelector("button[type='submit']");
-         function validateCardNumber(input) {
-            input.value = input.value.replace(/\D/g, "").substring(0, 16); // Оставляем только цифры, максимум 16
-            input.value = input.value.replace(/(\d{4})/g, "$1 ").trim(); // Формат 0000 0000 0000 0000
-            return input.value.length === 19; // Длина с пробелами должна быть 19 символов
-         }
-         function validateValidUntil(input) {
-            let value = input.value.replace(/\D/g, "").substring(0, 4); // Оставляем только цифры, максимум 4
-            if (value.length > 2) value = value.substring(0, 2) + "/" + value.substring(2);
-            input.value = value;
-            if (value.length !== 5) return false;
-            const [day, month] = value.split("/").map(Number);
-            return day >= 1 && day <= 31 && month >= 1 && month <= 12;
-         }
-         function validateCVV(input) {
-            input.value = input.value.replace(/\D/g, "").substring(0, 3); // Оставляем только цифры, максимум 3
-            return input.value.length === 3;
-         }
-         function checkFormValidity() {
-            const isValid = validateCardNumber(numberCard) && validateValidUntil(validUntil) && validateCVV(cvv);
-            submitButton.disabled = !isValid;
-         }
-         numberCard.addEventListener("input", () => {
-            validateCardNumber(numberCard);
-            checkFormValidity();
-         });
-         validUntil.addEventListener("input", () => {
-            validateValidUntil(validUntil);
-            checkFormValidity();
-         });
-         cvv.addEventListener("input", () => {
-            validateCVV(cvv);
-            checkFormValidity();
-         });
-         checkFormValidity(); // Проверка при загрузке страницы
-         paymentGoogle.addEventListener("click", () => {
-            if (paymentColumnBlockCard.classList.contains("show")) {
-               paymentColumnBlockCard.classList.remove("show");
-               clearPaymentFields();
-            }
-            submitButton.disabled = false; // Разблокируем кнопку при выборе Google Pay
-         });
-         paymentApple.addEventListener("click", () => {
-            if (paymentColumnBlockCard.classList.contains("show")) {
-               paymentColumnBlockCard.classList.remove("show");
-               clearPaymentFields();
-            }
-            submitButton.disabled = false; // Разблокируем кнопку при выборе Apple Pay
-         });
-         paymentCard.addEventListener("click", () => {
-            paymentColumnBlockCard.classList.add("show");
-            checkFormValidity(); // Проверяем валидацию и при необходимости блокируем кнопку
-         });
-         function clearPaymentFields() {
-            numberCard.value = "";
-            validUntil.value = "";
-            cvv.value = "";
-            checkFormValidity(); // Проверяем, нужно ли заблокировать кнопку
-         }
-      });
-   </script>
-   
 </body>
 </html>
