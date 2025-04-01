@@ -212,6 +212,331 @@ document.addEventListener("DOMContentLoaded", function () {
       messageField.addEventListener('input', checkFieldContent); // Track text input in the field
       checkFieldContent(); // Check initially in case there's already content in the field
    });
+
+   // Menu (Circle with dots)
+   document.querySelectorAll('.chat__wrap-message-headerWrapMenu').forEach(menu => {
+      const menuButton = menu.querySelector('.chat__wrap-message-headerMenuButton');
+      const leaveFeedbackItem = menu.querySelector('.leave-feedback');
+   
+      // Открытие/закрытие меню
+      menuButton.addEventListener('click', () => {
+         menu.classList.toggle('show');
+      });
+   
+      // Добавление блока отзыва
+      leaveFeedbackItem.addEventListener('click', () => {
+         menu.classList.remove('show'); // Закрываем меню
+         
+         const parentMessage = menu.closest('.chat__wrap-message'); // Находим родительский .chat__wrap-message
+         const messageBlock = parentMessage.querySelector('.chat__wrap-message-message'); // Внутри ищем .chat__wrap-message-message
+   
+         if (!messageBlock) return; // Если нет блока для вставки, выходим
+   
+         // Проверяем, существует ли уже блок отзыва, чтобы не дублировать
+         if (parentMessage.querySelector('.chat__leave-a-review')) return;
+   
+         // Создаем блок отзыва
+         const reviewBlock = document.createElement('div');
+         reviewBlock.classList.add('chat__leave-a-review');
+         reviewBlock.innerHTML = `<div class="chat__leave-a-reviewHead">
+               <h2>Leave a review</h2>
+               <div class="columns">
+                  <div class="column">
+                     <div class="wrap-photo">
+                        <div class="block-photo">
+                           <img src="images/chat-leave-a-review-photo.jpg" alt="">
+                        </div>
+                        <h5>Andriy LongNickname</h5>
+                     </div>
+                  </div>
+                  <div class="column">
+                     <div class="rate-this-article__wrapStarsRating">
+                        ${[1,2,3,4,5].map(num => `
+                           <label>
+                              <input id="review-rating-${num}" type="radio" name="review-rating" value="${num}">
+                              <img class="no-active" src="images/svg/star-post.svg" alt="">
+                              <img class="active" src="images/svg/star-post-active.svg" alt="">
+                           </label>
+                        `).join('')}
+                     </div>
+                  </div>
+               </div>
+               <button type="button" class="chat__leave-a-reviewClose">
+                  <img src="images/svg/close-block-review-chat.svg" alt="">
+               </button>
+            </div>
+            <div class="chat__leave-a-reviewBlockReview">
+               <div class="chat__leave-a-reviewBlockReviewHead">
+                  <textarea placeholder="Add a review (optional)"></textarea>
+               </div>
+               <p>Add a photo (optional)</p>
+               <div class="chat__leave-a-reviewContainer">
+                  <div class="chat__leave-a-reviewBlockPhoto">
+                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5889 20.5476H14.7221V14.5475H20.7307V13.4142H14.7221V7.28929H13.5889V13.4142H7.47244V14.5475H13.5889V20.5476ZM14.1163 27.1767C12.2705 27.1767 10.5482 26.8288 8.94963 26.133C7.35078 25.4372 5.94823 24.4867 4.74197 23.2817C3.53571 22.0767 2.58443 20.6746 1.88813 19.0755C1.19158 17.4762 0.843304 15.7526 0.843304 13.9048C0.843304 12.0759 1.19121 10.3564 1.88702 8.74622C2.58284 7.13633 3.53326 5.73439 4.73829 4.54041C5.94332 3.34643 7.34538 2.40129 8.94447 1.70498C10.5438 1.00843 12.2674 0.660156 14.1152 0.660156C15.9441 0.660156 17.6636 1.00806 19.2738 1.70388C20.8837 2.39969 22.2856 3.34397 23.4796 4.53673C24.6736 5.72948 25.6187 7.13215 26.315 8.74475C27.0116 10.3571 27.3598 12.0768 27.3598 13.9037C27.3598 15.7495 27.0119 17.4718 26.3161 19.0704C25.6203 20.6692 24.676 22.0696 23.4833 23.2714C22.2905 24.473 20.8878 25.4243 19.2752 26.1252C17.6629 26.8262 15.9432 27.1767 14.1163 27.1767ZM14.12 26.0435C17.4807 26.0435 20.3387 24.8645 22.694 22.5065C25.0491 20.1485 26.2266 17.2796 26.2266 13.9C26.2266 10.5393 25.0514 7.68127 22.701 5.32596C20.3504 2.9709 17.4839 1.79337 14.1016 1.79337C10.7342 1.79337 7.87153 2.96857 5.51353 5.31896C3.15552 7.6696 1.97652 10.5361 1.97652 13.9184C1.97652 17.2858 3.15552 20.1485 5.51353 22.5065C7.87153 24.8645 10.7404 26.0435 14.12 26.0435Z" fill="#1C1B1F"/>
+                     </svg>
+                     <p>Add Photo</p>
+                     <input type="file" title="">
+                  </div>
+                  <div class="chat__leave-a-reviewBlockPhoto">
+                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5889 20.5476H14.7221V14.5475H20.7307V13.4142H14.7221V7.28929H13.5889V13.4142H7.47244V14.5475H13.5889V20.5476ZM14.1163 27.1767C12.2705 27.1767 10.5482 26.8288 8.94963 26.133C7.35078 25.4372 5.94823 24.4867 4.74197 23.2817C3.53571 22.0767 2.58443 20.6746 1.88813 19.0755C1.19158 17.4762 0.843304 15.7526 0.843304 13.9048C0.843304 12.0759 1.19121 10.3564 1.88702 8.74622C2.58284 7.13633 3.53326 5.73439 4.73829 4.54041C5.94332 3.34643 7.34538 2.40129 8.94447 1.70498C10.5438 1.00843 12.2674 0.660156 14.1152 0.660156C15.9441 0.660156 17.6636 1.00806 19.2738 1.70388C20.8837 2.39969 22.2856 3.34397 23.4796 4.53673C24.6736 5.72948 25.6187 7.13215 26.315 8.74475C27.0116 10.3571 27.3598 12.0768 27.3598 13.9037C27.3598 15.7495 27.0119 17.4718 26.3161 19.0704C25.6203 20.6692 24.676 22.0696 23.4833 23.2714C22.2905 24.473 20.8878 25.4243 19.2752 26.1252C17.6629 26.8262 15.9432 27.1767 14.1163 27.1767ZM14.12 26.0435C17.4807 26.0435 20.3387 24.8645 22.694 22.5065C25.0491 20.1485 26.2266 17.2796 26.2266 13.9C26.2266 10.5393 25.0514 7.68127 22.701 5.32596C20.3504 2.9709 17.4839 1.79337 14.1016 1.79337C10.7342 1.79337 7.87153 2.96857 5.51353 5.31896C3.15552 7.6696 1.97652 10.5361 1.97652 13.9184C1.97652 17.2858 3.15552 20.1485 5.51353 22.5065C7.87153 24.8645 10.7404 26.0435 14.12 26.0435Z" fill="#1C1B1F"/>
+                     </svg>
+                     <p>Add Photo</p>
+                     <input type="file" title="">
+                  </div>
+                  <div class="chat__leave-a-reviewBlockPhoto">
+                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5889 20.5476H14.7221V14.5475H20.7307V13.4142H14.7221V7.28929H13.5889V13.4142H7.47244V14.5475H13.5889V20.5476ZM14.1163 27.1767C12.2705 27.1767 10.5482 26.8288 8.94963 26.133C7.35078 25.4372 5.94823 24.4867 4.74197 23.2817C3.53571 22.0767 2.58443 20.6746 1.88813 19.0755C1.19158 17.4762 0.843304 15.7526 0.843304 13.9048C0.843304 12.0759 1.19121 10.3564 1.88702 8.74622C2.58284 7.13633 3.53326 5.73439 4.73829 4.54041C5.94332 3.34643 7.34538 2.40129 8.94447 1.70498C10.5438 1.00843 12.2674 0.660156 14.1152 0.660156C15.9441 0.660156 17.6636 1.00806 19.2738 1.70388C20.8837 2.39969 22.2856 3.34397 23.4796 4.53673C24.6736 5.72948 25.6187 7.13215 26.315 8.74475C27.0116 10.3571 27.3598 12.0768 27.3598 13.9037C27.3598 15.7495 27.0119 17.4718 26.3161 19.0704C25.6203 20.6692 24.676 22.0696 23.4833 23.2714C22.2905 24.473 20.8878 25.4243 19.2752 26.1252C17.6629 26.8262 15.9432 27.1767 14.1163 27.1767ZM14.12 26.0435C17.4807 26.0435 20.3387 24.8645 22.694 22.5065C25.0491 20.1485 26.2266 17.2796 26.2266 13.9C26.2266 10.5393 25.0514 7.68127 22.701 5.32596C20.3504 2.9709 17.4839 1.79337 14.1016 1.79337C10.7342 1.79337 7.87153 2.96857 5.51353 5.31896C3.15552 7.6696 1.97652 10.5361 1.97652 13.9184C1.97652 17.2858 3.15552 20.1485 5.51353 22.5065C7.87153 24.8645 10.7404 26.0435 14.12 26.0435Z" fill="#1C1B1F"/>
+                     </svg>
+                     <p>Add Photo</p>
+                     <input type="file" title="">
+                  </div>
+                  <div class="chat__leave-a-reviewBlockPhoto">
+                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5889 20.5476H14.7221V14.5475H20.7307V13.4142H14.7221V7.28929H13.5889V13.4142H7.47244V14.5475H13.5889V20.5476ZM14.1163 27.1767C12.2705 27.1767 10.5482 26.8288 8.94963 26.133C7.35078 25.4372 5.94823 24.4867 4.74197 23.2817C3.53571 22.0767 2.58443 20.6746 1.88813 19.0755C1.19158 17.4762 0.843304 15.7526 0.843304 13.9048C0.843304 12.0759 1.19121 10.3564 1.88702 8.74622C2.58284 7.13633 3.53326 5.73439 4.73829 4.54041C5.94332 3.34643 7.34538 2.40129 8.94447 1.70498C10.5438 1.00843 12.2674 0.660156 14.1152 0.660156C15.9441 0.660156 17.6636 1.00806 19.2738 1.70388C20.8837 2.39969 22.2856 3.34397 23.4796 4.53673C24.6736 5.72948 25.6187 7.13215 26.315 8.74475C27.0116 10.3571 27.3598 12.0768 27.3598 13.9037C27.3598 15.7495 27.0119 17.4718 26.3161 19.0704C25.6203 20.6692 24.676 22.0696 23.4833 23.2714C22.2905 24.473 20.8878 25.4243 19.2752 26.1252C17.6629 26.8262 15.9432 27.1767 14.1163 27.1767ZM14.12 26.0435C17.4807 26.0435 20.3387 24.8645 22.694 22.5065C25.0491 20.1485 26.2266 17.2796 26.2266 13.9C26.2266 10.5393 25.0514 7.68127 22.701 5.32596C20.3504 2.9709 17.4839 1.79337 14.1016 1.79337C10.7342 1.79337 7.87153 2.96857 5.51353 5.31896C3.15552 7.6696 1.97652 10.5361 1.97652 13.9184C1.97652 17.2858 3.15552 20.1485 5.51353 22.5065C7.87153 24.8645 10.7404 26.0435 14.12 26.0435Z" fill="#1C1B1F"/>
+                     </svg>
+                     <p>Add Photo</p>
+                     <input type="file" title="">
+                  </div>
+                  <div class="chat__leave-a-reviewBlockPhoto">
+                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5889 20.5476H14.7221V14.5475H20.7307V13.4142H14.7221V7.28929H13.5889V13.4142H7.47244V14.5475H13.5889V20.5476ZM14.1163 27.1767C12.2705 27.1767 10.5482 26.8288 8.94963 26.133C7.35078 25.4372 5.94823 24.4867 4.74197 23.2817C3.53571 22.0767 2.58443 20.6746 1.88813 19.0755C1.19158 17.4762 0.843304 15.7526 0.843304 13.9048C0.843304 12.0759 1.19121 10.3564 1.88702 8.74622C2.58284 7.13633 3.53326 5.73439 4.73829 4.54041C5.94332 3.34643 7.34538 2.40129 8.94447 1.70498C10.5438 1.00843 12.2674 0.660156 14.1152 0.660156C15.9441 0.660156 17.6636 1.00806 19.2738 1.70388C20.8837 2.39969 22.2856 3.34397 23.4796 4.53673C24.6736 5.72948 25.6187 7.13215 26.315 8.74475C27.0116 10.3571 27.3598 12.0768 27.3598 13.9037C27.3598 15.7495 27.0119 17.4718 26.3161 19.0704C25.6203 20.6692 24.676 22.0696 23.4833 23.2714C22.2905 24.473 20.8878 25.4243 19.2752 26.1252C17.6629 26.8262 15.9432 27.1767 14.1163 27.1767ZM14.12 26.0435C17.4807 26.0435 20.3387 24.8645 22.694 22.5065C25.0491 20.1485 26.2266 17.2796 26.2266 13.9C26.2266 10.5393 25.0514 7.68127 22.701 5.32596C20.3504 2.9709 17.4839 1.79337 14.1016 1.79337C10.7342 1.79337 7.87153 2.96857 5.51353 5.31896C3.15552 7.6696 1.97652 10.5361 1.97652 13.9184C1.97652 17.2858 3.15552 20.1485 5.51353 22.5065C7.87153 24.8645 10.7404 26.0435 14.12 26.0435Z" fill="#1C1B1F"/>
+                     </svg>
+                     <p>Add Photo</p>
+                     <input type="file" title="">
+                  </div>
+                  <div class="chat__leave-a-reviewBlockPhoto">
+                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5889 20.5476H14.7221V14.5475H20.7307V13.4142H14.7221V7.28929H13.5889V13.4142H7.47244V14.5475H13.5889V20.5476ZM14.1163 27.1767C12.2705 27.1767 10.5482 26.8288 8.94963 26.133C7.35078 25.4372 5.94823 24.4867 4.74197 23.2817C3.53571 22.0767 2.58443 20.6746 1.88813 19.0755C1.19158 17.4762 0.843304 15.7526 0.843304 13.9048C0.843304 12.0759 1.19121 10.3564 1.88702 8.74622C2.58284 7.13633 3.53326 5.73439 4.73829 4.54041C5.94332 3.34643 7.34538 2.40129 8.94447 1.70498C10.5438 1.00843 12.2674 0.660156 14.1152 0.660156C15.9441 0.660156 17.6636 1.00806 19.2738 1.70388C20.8837 2.39969 22.2856 3.34397 23.4796 4.53673C24.6736 5.72948 25.6187 7.13215 26.315 8.74475C27.0116 10.3571 27.3598 12.0768 27.3598 13.9037C27.3598 15.7495 27.0119 17.4718 26.3161 19.0704C25.6203 20.6692 24.676 22.0696 23.4833 23.2714C22.2905 24.473 20.8878 25.4243 19.2752 26.1252C17.6629 26.8262 15.9432 27.1767 14.1163 27.1767ZM14.12 26.0435C17.4807 26.0435 20.3387 24.8645 22.694 22.5065C25.0491 20.1485 26.2266 17.2796 26.2266 13.9C26.2266 10.5393 25.0514 7.68127 22.701 5.32596C20.3504 2.9709 17.4839 1.79337 14.1016 1.79337C10.7342 1.79337 7.87153 2.96857 5.51353 5.31896C3.15552 7.6696 1.97652 10.5361 1.97652 13.9184C1.97652 17.2858 3.15552 20.1485 5.51353 22.5065C7.87153 24.8645 10.7404 26.0435 14.12 26.0435Z" fill="#1C1B1F"/>
+                     </svg>
+                     <p>Add Photo</p>
+                     <input type="file" title="">
+                  </div>
+               </div>
+            </div>
+            <button type="button" class="chat__leave-a-reviewButton" disabled>Publish</button>`;
+   
+         messageBlock.appendChild(reviewBlock);
+   
+         // Прокрутка вниз к добавленному блоку
+         reviewBlock.scrollIntoView({ block: 'end' });
+   
+         // Закрытие блока отзыва
+         reviewBlock.querySelector('.chat__leave-a-reviewClose').addEventListener('click', () => {
+            reviewBlock.remove();
+         });
+      });
+   });
+
+   // для созданного блока отзыва
+   const observer3 = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+         mutation.addedNodes.forEach((node) => {
+            if (node.nodeType === 1) {
+               if (node.classList.contains("chat__leave-a-review")) {
+                  initReviewBlock(node);
+               }
+               const reviewBlocks = node.querySelectorAll(".chat__leave-a-review");
+               reviewBlocks.forEach(initReviewBlock);
+            }
+         });
+      });
+   });
+   observer3.observe(document.body, { childList: true, subtree: true });
+   
+   function initReviewBlock(reviewBlock) {
+      const ratingInputs = reviewBlock.querySelectorAll('input[name="review-rating"]');
+      const submitButton = reviewBlock.querySelector('.chat__leave-a-reviewButton');
+      const photoContainer = reviewBlock.querySelector('.chat__leave-a-reviewBlockPhoto');
+   
+      if (!submitButton || !photoContainer) return;
+   
+      // Проверяем выбор рейтинга
+      ratingInputs.forEach(input => {
+         input.addEventListener("change", () => {
+            submitButton.removeAttribute("disabled");
+            submitButton.classList.remove("disabled");
+         });
+      });
+   
+      // Функция для обработки загрузки изображений
+      function handleFileInput(event) {
+         const fileInput = event.target;
+         if (fileInput.files.length === 0) return;
+   
+         const file = fileInput.files[0];
+         if (!file.type.startsWith("image/")) return;
+   
+         const reader = new FileReader();
+         reader.onload = function (e) {
+            if (photoContainer.querySelectorAll(".image-preview").length >= 6) return;
+   
+            const imageWrapper = document.createElement("div");
+            imageWrapper.classList.add("image-preview");
+   
+            const img = document.createElement("img");
+            img.src = e.target.result;
+   
+            const removeBtn = document.createElement("button");
+            removeBtn.innerHTML = '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.14882 11.2297L0.97168 10.0526L5.14784 5.87641L0.97168 1.72792L2.14882 0.550781L6.32498 4.72694L10.4735 0.550781L11.6506 1.72792L7.47445 5.87641L11.6506 10.0526L10.4735 11.2297L6.32498 7.05355L2.14882 11.2297Z" fill="#1C1B1F"/></svg>';
+            removeBtn.classList.add("remove-image");
+   
+            removeBtn.addEventListener("click", () => {
+               imageWrapper.remove();
+               if (photoContainer.querySelectorAll(".image-preview").length < 6) {
+                  addNewFileInput();
+               }
+            });
+   
+            imageWrapper.appendChild(img);
+            imageWrapper.appendChild(removeBtn);
+            photoContainer.appendChild(imageWrapper);
+   
+            // Удаляем старый input и создаем новый, если изображений < 6
+            fileInput.remove();
+            if (photoContainer.querySelectorAll(".image-preview").length < 6) {
+               addNewFileInput();
+            }
+         };
+         reader.readAsDataURL(file);
+      }
+   
+      // Функция для добавления нового input file
+      function addNewFileInput() {
+         const newFileInput = document.createElement("input");
+         newFileInput.type = "file";
+         newFileInput.title = "";
+         newFileInput.classList.add("review-photo-input"); // Добавляем класс для делегирования событий
+         photoContainer.appendChild(newFileInput);
+      }
+   
+      // Добавляем делегирование событий для работы со всеми будущими input[type="file"]
+      photoContainer.addEventListener("change", (event) => {
+         if (event.target.matches('input[type="file"]')) {
+            handleFileInput(event);
+         }
+      });
+   
+      // Если уже есть input[type="file"], запускаем обработку
+      const existingFileInput = photoContainer.querySelector('input[type="file"]');
+      if (!existingFileInput) {
+         addNewFileInput();
+      }
+   }
+   if (!window.observer3) {
+      window.observer3 = new MutationObserver((mutations) => {
+         mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+               if (node.nodeType === 1) {
+                  if (node.classList.contains("chat__leave-a-review")) {
+                     initReviewBlock(node);
+                  }
+                  const reviewBlocks = node.querySelectorAll(".chat__leave-a-review");
+                  reviewBlocks.forEach(initReviewBlock);
+               }
+            });
+         });
+      });
+      window.observer3.observe(document.body, { childList: true, subtree: true });
+   }
+   function initReviewBlock(reviewBlock) {
+      const ratingInputs = reviewBlock.querySelectorAll('input[name="review-rating"]');
+      const submitButton = reviewBlock.querySelector('.chat__leave-a-reviewButton');
+      const photoContainers = reviewBlock.querySelectorAll('.chat__leave-a-reviewBlockPhoto'); // ВСЕ контейнеры
+      if (!submitButton || photoContainers.length === 0) return;
+      // Проверяем выбор рейтинга
+      ratingInputs.forEach(input => {
+         input.addEventListener("change", () => {
+            submitButton.removeAttribute("disabled");
+            submitButton.classList.remove("disabled");
+         });
+      });
+      photoContainers.forEach(photoContainer => {
+         // Функция для обработки загрузки изображений
+         function handleFileInput(fileInput) {
+            fileInput.addEventListener("change", function () {
+               if (fileInput.files.length === 0) return;
+               const file = fileInput.files[0];
+               if (!file.type.startsWith("image/")) return;
+               const reader = new FileReader();
+               reader.onload = function (e) {
+                  if (photoContainer.querySelectorAll(".image-preview").length >= 6) return;
+                  const imageWrapper = document.createElement("div");
+                  imageWrapper.classList.add("image-preview");
+                  const img = document.createElement("img");
+                  img.src = e.target.result;
+                  const removeBtn = document.createElement("button");
+                  removeBtn.innerHTML = '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.14882 11.2297L0.97168 10.0526L5.14784 5.87641L0.97168 1.72792L2.14882 0.550781L6.32498 4.72694L10.4735 0.550781L11.6506 1.72792L7.47445 5.87641L11.6506 10.0526L10.4735 11.2297L6.32498 7.05355L2.14882 11.2297Z" fill="#1C1B1F"/></svg>';
+                  removeBtn.classList.add("remove-image");
+                  removeBtn.addEventListener("click", () => {
+                     imageWrapper.remove();
+                     if (photoContainer.querySelectorAll(".image-preview").length < 6) {
+                        addNewFileInput();
+                     }
+                  });
+                  imageWrapper.appendChild(img);
+                  imageWrapper.appendChild(removeBtn);
+                  photoContainer.appendChild(imageWrapper);
+                  // Удаляем старый input и создаем новый, если изображений < 6
+                  fileInput.remove();
+                  if (photoContainer.querySelectorAll(".image-preview").length < 6) {
+                     addNewFileInput();
+                  }
+               };
+               reader.readAsDataURL(file);
+            });
+         }
+         // Функция для добавления нового input file
+         function addNewFileInput() {
+            const newFileInput = document.createElement("input");
+            newFileInput.type = "file";
+            newFileInput.title = "";
+            photoContainer.appendChild(newFileInput);
+            handleFileInput(newFileInput);
+         }
+         // Запускаем обработку для существующего input
+         const existingFileInput = photoContainer.querySelector('input[type="file"]');
+         if (existingFileInput) {
+            handleFileInput(existingFileInput);
+         }
+      });
+   }
+
+   // Roting form reviews
+   function updateStarsRating(rating, starsRating) {
+      if (!starsRating) return; // Если блока нет, выходим
+      starsRating.classList.remove('rating-1', 'rating-2', 'rating-3', 'rating-4', 'rating-5');
+      starsRating.classList.add(`rating-${rating}`);
+   }
+   function attachRatingHandlers(starsRating) { // Функция для навешивания обработчиков на конкретный блок
+      let ratingButtons = starsRating.querySelectorAll('input[type="radio"]');
+      if (ratingButtons.length === 0) return; // Если кнопок нет, выходим
+      ratingButtons.forEach(button => {
+         button.addEventListener('click', () => {
+            let rating = parseInt(button.value);
+            updateStarsRating(rating, starsRating);
+         });
+      });
+   }
+   function initAllRatingBlocks() { // Функция для инициализации всех существующих блоков
+      document.querySelectorAll('.rate-this-article__wrapStarsRating').forEach(attachRatingHandlers);
+   }
+   const observer4 = new MutationObserver(mutations => { // Наблюдатель за появлением новых блоков с рейтингом
+      mutations.forEach(mutation => {
+         mutation.addedNodes.forEach(node => {
+            if (node.nodeType === 1) { // Только для элементов
+               let starsBlocks = node.querySelectorAll('.rate-this-article__wrapStarsRating');
+               if (node.classList.contains('rate-this-article__wrapStarsRating')) {
+                  attachRatingHandlers(node);
+               }
+               starsBlocks.forEach(attachRatingHandlers);
+            }
+         });
+      });
+   });
+   observer4.observe(document.body, { childList: true, subtree: true }); // Запускаем наблюдатель за `body`
+   initAllRatingBlocks(); // Инициализируем уже существующие блоки при загрузке
 });
 
 // Check for touch device
