@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
    });
 
-
+   /*
    let searchTimeout; // Delay before searching
    // Input handler for the field
    document.querySelectorAll('.form-culumn input').forEach(input => {
@@ -188,5 +188,5 @@ document.addEventListener('DOMContentLoaded', function() {
          }
       });
    });
-
+   */
 });
